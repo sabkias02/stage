@@ -1,13 +1,33 @@
-.App {
-  text-align: center;
-}
+
 body{
 
   background-color: black;
-  color: white;
   
- 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
   
+  .card1{
+
+    background-color: black;
+    
+    color: white;
+  
+
+
+   
+
+
   }
 
+  .APP {
 
+    background-color: black;
+
+
+  }
+  
+
+  .btn-space {
+    margin-right: 15px;
+}
