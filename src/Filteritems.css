@@ -1,0 +1,43 @@
+.form-check {
+
+  color:white;
+  font-size: small;
+   background-color: black;
+
+
+}
+
+h5{
+
+    font-weight: bold;
+    color:white;
+    border: 2px solid white;
+
+
+
+}
+
+form {
+    align-content: left;
+    width: 250px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: auto;
+    padding-bottom: 20px;
+    
+
+
+}
+
+
+  div {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  fieldset {
+    background:black;
+    border: 1px solid whitesmoke;
+  }
+  

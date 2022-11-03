@@ -80,7 +80,7 @@ const BlackHistoryCards = () => {
             </a>
           </div>
         </div>
-        <CardGroup className="list">
+        <CardGroup className="list  d-flex">
           <Row sm={1} md={3} lg={4} className="g-4">
             <Col className="card-columns">
               <Card>
