@@ -1,4 +1,5 @@
 import React from "react";
+import Contribute from "./Contribute";
 
 import Navbar from "./Headers/Navbar";
 import BlackHistoryCards from "./BlackHistoryCards";
@@ -10,9 +11,10 @@ function App() {
     <div className="App">
       <Navbar />
       <BlackHistoryCards />
-      <br />
-      <br />
+
       <Filteritems />
+
+      <Contribute />
     </div>
   );
 }

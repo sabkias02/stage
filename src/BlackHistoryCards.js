@@ -5,7 +5,7 @@ import CardGroup from "react-bootstrap/CardGroup";
 import { Row, Col, Stack } from "react-bootstrap";
 
 import "./BlackHistoryCards.css";
-const BlackHistoryCards = () => {
+function BlackHistoryCards() {
   return (
     <div>
       <CardGroup>
@@ -267,6 +267,6 @@ const BlackHistoryCards = () => {
       </div>
     </div>
   );
-};
+}
 
 export default BlackHistoryCards;
