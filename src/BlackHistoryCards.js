@@ -8,14 +8,15 @@ import "./BlackHistoryCards.css";
 function BlackHistoryCards() {
   return (
     <div>
-      <CardGroup>
-        <Card>
+      <CardGroup className="discover">
+        <Card className="dao1 ">
           <Card.Body className="card1">
             <Card.Text
               style={{
                 marginTop: "30px",
                 marginBottom: "30px",
-                fontSize: "60px",
+                wordSpacing: "10px",
+                fontSize: "50px",
               }}
             >
               Discover Digital
@@ -45,7 +46,7 @@ function BlackHistoryCards() {
             </div>
           </Card.Body>
         </Card>
-        <Card>
+        <Card className="dao2 ">
           <Card.Img src={require("./images/slider-1.jpeg")} />
         </Card>
       </CardGroup>
@@ -97,8 +98,8 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "10vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/firstJimcrow.jpeg")}
                       alt="img-1"
@@ -106,8 +107,8 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "10vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/secondJimCrow.jpeg")}
                       alt="img-2"
@@ -115,8 +116,8 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "10vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/thirdJimCrew.jpeg")}
                       alt="img-3"
@@ -124,7 +125,7 @@ function BlackHistoryCards() {
                   </Stack>
                   <Card.Title>
                     Jim Crow:Equal <br />
-                    Opportunity<span>20 items</span>
+                    Opportunity<span className="items">20 items</span>
                   </Card.Title>
                 </Card.Body>
               </Card>
@@ -145,8 +146,8 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "8vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/firstSeparate.webp")}
                       alt="img-1"
@@ -154,8 +155,8 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "8vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/second-separate.webp")}
                       alt="img-2"
@@ -163,14 +164,16 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "8vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/third separate.webp")}
                       alt="img-3"
                     />
                   </Stack>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>
+                    Separate but Equal<span className="items">20 items</span>
+                  </Card.Title>
                 </Card.Body>
               </Card>
             </Col>
@@ -189,8 +192,8 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "8vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/firstblacklivesMatter.webp")}
                       alt="img-1"
@@ -198,8 +201,8 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "8vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/secondBlackLivesMatter.webp")}
                       alt="img-2"
@@ -207,14 +210,16 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "8vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/thirdblacklivesMatter.webp")}
                       alt="img-3"
                     />
                   </Stack>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>
+                    Black Lives Matter <span className="items">15 items</span>
+                  </Card.Title>
                 </Card.Body>
               </Card>
             </Col>
@@ -233,8 +238,8 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "8vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/till2.webp")}
                       alt="img-1"
@@ -242,8 +247,8 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "8vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/till3.webp")}
                       alt="img-2"
@@ -251,14 +256,16 @@ function BlackHistoryCards() {
                     <img
                       style={{
                         width: "4rem",
-                        height: "8vw ",
-                        borderRadius: "20px",
+                        height: "4vw ",
+                        borderRadius: "10px",
                       }}
                       src={require("./images/till4.webp")}
                       alt="img-3"
                     />
                   </Stack>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title>
+                    Emett Till<span className="items">27 items</span>
+                  </Card.Title>
                 </Card.Body>
               </Card>
             </Col>

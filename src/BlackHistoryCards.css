@@ -2,10 +2,35 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
+    max-height:max-content;
+    box-shadow: none;
+   
     background-color: black;
+    box-shadow:black;
     
   
+  }
+
+  
+   
+
+
+  
+
+  .discover{
+    margin: 20px;
+
+  }
+
+  .dao1,.dao2 {
+   
+    background-color: rgb(51, 50, 50);
+
+    max-width: 45%;
+    max-height:max-content;
+    border-spacing: 20px;
+
+
   }
 
   .card-img-top {
@@ -19,13 +44,21 @@
 
 
   .card-img-top:hover{
-  opacity: 0.7;
-  -webkit-transform:scale(1.15);
-  -moz-transform:scale(1.15);
-  -ms-transform:scale(1.15);
-  -o-transform:scale(1.15);
-  transform:scale(1.15);
+ 
+  -webkit-transform:scale(1.10);
+  -moz-transform:scale(1.10);
+  -ms-transform:scale(1.10);
+  -o-transform:scale(1.10);
+  transform:scale(1.10);
   
 }
 
 
+.items {
+ background-color: gray;
+ font-size: smaller;
+ float: right;
+ 
+
+
+}

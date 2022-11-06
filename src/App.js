@@ -1,21 +1,24 @@
 import React from "react";
-import Contribute from "./Contribute";
 
 import Navbar from "./Headers/Navbar";
-import BlackHistoryCards from "./BlackHistoryCards";
-import Filteritems from "./Filteritems";
+
+import Home from "./Home";
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Create from "./Create";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <BlackHistoryCards />
-
-      <Filteritems />
-
-      <Contribute />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Home" element={<Home />} />
+          <Route exact path="/create" element={<Create />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

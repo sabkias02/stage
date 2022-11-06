@@ -3,12 +3,13 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Navbar.css";
 
 function NavScroll() {
   return (
-    <Navbar bg="dark" expand="lg" variant="dark">
+    <Navbar bg="dark" expand="lg" variant="dark" className="sticky">
       <Container fluid className="Container">
         <Navbar.Brand href="#">
           <img src={require("./logo-white.png")} alt="" />
@@ -20,8 +21,10 @@ function NavScroll() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Create proposal</Nav.Link>
+            <Link to="/Home" style={{ paddingRight: "20px" }}>
+              Home
+            </Link>
+            <Link to="Create">Create proposal</Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
