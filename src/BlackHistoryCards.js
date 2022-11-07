@@ -35,7 +35,7 @@ function BlackHistoryCards() {
               </Button>
 
               <Button
-                href="/create"
+                href="/"
                 className="btn btn-large btn-secondary sal-animate btn-space"
                 data-sal-delay="500"
                 data-sal="slide-up"
