@@ -3,9 +3,16 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import CardGroup from "react-bootstrap/CardGroup";
 import { Row, Col, Stack } from "react-bootstrap";
-
+import { BrowserRouter as Router, useNavigate, Link } from "react-router-dom";
 import "./BlackHistoryCards.css";
+import Create from "./Create";
+
 function BlackHistoryCards() {
+  const navigate = useNavigate();
+  const handleHistory = () => {
+    navigate("/create");
+  };
+
   return (
     <div>
       <CardGroup className="discover">
@@ -26,6 +33,11 @@ function BlackHistoryCards() {
             <div className="button-group">
               <Button
                 href="/"
+                style={{
+                  borderRadius: "10px",
+                  boxShadow: "5px 10px #888888",
+                  pointerEvents: "auto",
+                }}
                 className="btn btn-large btn-primary sal-animate btn-space"
                 data-sal-delay="400"
                 data-sal="slide-up"
@@ -33,16 +45,22 @@ function BlackHistoryCards() {
               >
                 Become a verifier
               </Button>
-
-              <Button
-                href="/"
-                className="btn btn-large btn-secondary sal-animate btn-space"
-                data-sal-delay="500"
-                data-sal="slide-up"
-                data-sal-duration="800"
-              >
-                Create Proposal
-              </Button>
+              <Link to="/create">
+                <Button
+                  OnClick={handleHistory}
+                  style={{
+                    borderRadius: "10px",
+                    boxShadow: "5px 10px #888888",
+                    pointerEvents: "auto",
+                  }}
+                  className="btn btn-large btn-secondary sal-animate btn-space"
+                  data-sal-delay="500"
+                  data-sal="slide-up"
+                  data-sal-duration="800"
+                >
+                  Create Proposal
+                </Button>
+              </Link>
             </div>
           </Card.Body>
         </Card>

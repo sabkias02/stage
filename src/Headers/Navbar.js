@@ -34,12 +34,17 @@ function NavScroll() {
               aria-label="Search"
               background-color="black"
             />
-            <button className="fa fa-search btn btn-dark "></button>
+            <button className="fa fa-search btn btn-primary "></button>
           </Form>
           <div className="icon-box">
             <button
               className="connectBtn btn btn-small btn-secondary"
               type="button"
+              style={{
+                borderRadius: "10px",
+                boxShadow: "5px 10px #888888",
+                pointerEvents: "auto",
+              }}
             >
               <span>Wallet connect</span>
             </button>

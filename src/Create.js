@@ -13,18 +13,20 @@ const Create = () => {
       >
         <div class="row">
           <div class="col-lg-6" fullWidth style={{}}>
-            <div
-              className="upload-area"
-              style={{ border: "dashed", color: "red" }}
-            >
-              <div clasName="upload">
-                <MDBFile
-                  label="Choose a Cover/NFT
-                    
-                      PNG, GIF, WEBP, MP4 or MP3. Max 1Gb."
-                  id="customFile"
-                />
+            <div class="upload-formate mb--20">
+              <h6 class="title">
+                <strong>Upload Asset file</strong>
+              </h6>
+              <p class="formate">Drag or choose a file to upload</p>
+            </div>
+            <div className="upload-area" style={{ border: "dashed" }}>
+              <div
+                clasName="upload"
+                style={{ color: "red", fontWeight: "Bold", fontSize: "20px" }}
+              >
+                <MDBFile label="Choose a Cover/NFT" id="customFile" />
               </div>
+              <span>PNG, GIF, WEBP, MP4 or MP3. Max 1Gb</span>
             </div>
           </div>
           <div
@@ -61,13 +63,13 @@ const Create = () => {
               ></textarea>
               <div className="btn-group">
                 <button
-                  className="btn btn-large btn-secondary btn-space "
+                  className="btn btn-large btn-dark btn-space "
                   type="submit"
                   data-btn="preview"
                   style={{
                     margin: "5px 15px 5px 35px ",
                     borderRadius: "10px",
-                    maxHeight: " max-content",
+                    maxHeight: " min-content",
                   }}
                 >
                   <span>Preview</span>
@@ -78,7 +80,7 @@ const Create = () => {
                   style={{
                     margin: "5px 35px 5px 15px ",
                     borderRadius: "10px",
-                    maxHeight: " max-content",
+                    maxHeight: " min-content",
                   }}
                 >
                   <span>Make Proposal</span>
