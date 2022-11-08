@@ -14,48 +14,48 @@ const Filteritems = () => {
           <form>
             <fieldset>
               <h5>Sort By</h5>
-              <div classNameName="form-check">
+              <div className="form-check">
                 <input
-                  classNameName="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault2"
                   checked
                 />
-                <label classNameName=" form-check-label" or="flexRadioDefault2">
+                <label className=" form-check-label" or="flexRadioDefault2">
                   Newest
                 </label>
               </div>
-              <div classNameName="form-check">
+              <div className="form-check">
                 <input
-                  classNameName="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault1"
                 />
-                <label classNameName="form-check-label" for="flexRadioDefault1">
+                <label className="form-check-label" for="flexRadioDefault1">
                   Oldest
                 </label>
               </div>
-              <div classNameName="form-check">
+              <div className="form-check">
                 <input
-                  classNameName="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault1"
                 />
-                <label classNameName="form-check-label" for="flexRadioDefault1">
+                <label className="form-check-label" for="flexRadioDefault1">
                   Most Liked
                 </label>
               </div>
-              <div classNameName="form-check">
+              <div className="form-check">
                 <input
-                  classNameName="form-check-input"
+                  className="form-check-input"
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault1"
                 />
-                <label classNameName="form-check-label" for="flexRadioDefault1">
+                <label className="form-check-label" for="flexRadioDefault1">
                   Least Liked
                 </label>
               </div>
@@ -255,14 +255,14 @@ const Filteritems = () => {
                 <label for="star-check5">
                   <span className="score">
                     <div className="score-wrap">
-                      <span class="stars-active" style={{ width: "100%" }}>
+                      <span className="stars-active" style={{ width: "100%" }}>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                       </span>
-                      <span class="stars-inactive">
+                      <span className="stars-inactive">
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>
@@ -281,7 +281,7 @@ const Filteritems = () => {
                   value="4stars"
                 />
                 <label for="star-check4">
-                  <span class="score">
+                  <span className="score">
                     <div className="score-wrap">
                       <span className="stars-active" style={{ width: "80%" }}>
                         <i className="fa fa-star" aria-hidden="true"></i>
@@ -290,7 +290,7 @@ const Filteritems = () => {
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                       </span>
-                      <span class="stars-inactive">
+                      <span className="stars-inactive">
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>
@@ -310,16 +310,16 @@ const Filteritems = () => {
                   value="3stars"
                 />
                 <label for="star-check3">
-                  <span class="score">
+                  <span className="score">
                     <div className="score-wrap">
-                      <span class="stars-active" style={{ width: "60%" }}>
+                      <span className="stars-active" style={{ width: "60%" }}>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                       </span>
-                      <span class="stars-inactive">
+                      <span className="stars-inactive">
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>
@@ -338,16 +338,16 @@ const Filteritems = () => {
                   value="2stars"
                 />
                 <label for="star-check2">
-                  <span class="score">
+                  <span className="score">
                     <div className="score-wrap">
-                      <span class="stars-active" style={{ width: "40%" }}>
+                      <span className="stars-active" style={{ width: "40%" }}>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                       </span>
-                      <span class="stars-inactive">
+                      <span className="stars-inactive">
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>
@@ -366,16 +366,16 @@ const Filteritems = () => {
                   value="1stars"
                 />
                 <label for="star-check1">
-                  <span class="score">
+                  <span className="score">
                     <div className="score-wrap">
-                      <span class="stars-active" style={{ width: "20%" }}>
+                      <span className="stars-active" style={{ width: "20%" }}>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                         <i className="fa fa-star" aria-hidden="true"></i>
                       </span>
-                      <span class="stars-inactive">
+                      <span className="stars-inactive">
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>
                         <i className="fa fa-star-o" aria-hidden="true"></i>

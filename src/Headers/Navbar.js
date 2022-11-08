@@ -38,7 +38,7 @@ function NavScroll() {
           </Form>
           <div className="icon-box">
             <button
-              className="connectBtn btn btn-small btn-secondary"
+              name="connectBtn btn btn-small btn-secondary"
               type="button"
               style={{
                 borderRadius: "10px",

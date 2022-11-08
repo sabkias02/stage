@@ -3,16 +3,11 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import CardGroup from "react-bootstrap/CardGroup";
 import { Row, Col, Stack } from "react-bootstrap";
-import { BrowserRouter as Router, useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./BlackHistoryCards.css";
 import Create from "./Create";
 
 function BlackHistoryCards() {
-  const navigate = useNavigate();
-  const handleHistory = () => {
-    navigate("/create");
-  };
-
   return (
     <div>
       <CardGroup className="discover">
@@ -47,7 +42,6 @@ function BlackHistoryCards() {
               </Button>
               <Link to="/create">
                 <Button
-                  OnClick={handleHistory}
                   style={{
                     borderRadius: "10px",
                     boxShadow: "5px 10px #888888",
@@ -68,8 +62,8 @@ function BlackHistoryCards() {
           <Card.Img src={require("./images/slider-1.jpeg")} />
         </Card>
       </CardGroup>
-      <div class="container">
-        <div class="row mb--50 align-items-center">
+      <div className="container">
+        <div className="row mb--50 align-items-center">
           <div className="col-lg-6 col-md-6 col-sm-6 col-12">
             <h1
               className="title mb--0 sal-animate"
@@ -87,7 +81,7 @@ function BlackHistoryCards() {
             </h1>
           </div>
         </div>
-        <div clasName="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--15">
+        <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--15">
           <div
             className="view-more-btn text-start text-sm-end sal-animate"
             data-sal-delay="150"
