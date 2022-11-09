@@ -29,24 +29,43 @@ function NavScroll() {
           <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search"
-              className="me-2"
+              placeholder="Search Here"
+              className="me-0"
               aria-label="Search"
-              background-color="black"
+              style={{
+                backgroundColor: "rgb(82, 79, 79)",
+                borderStyle: "none",
+              }}
             />
-            <button className="fa fa-search btn btn-primary "></button>
-          </Form>
-          <div className="icon-box">
             <button
-              name="connectBtn btn btn-small btn-secondary"
+              className="fa fa-search "
+              style={{
+                backgroundColor: "rgb(82, 79, 79)",
+
+                color: "white",
+              }}
+            ></button>
+          </Form>
+          <div
+            className="icon-box"
+            style={{
+              borderRadius: "10px",
+
+              pointerEvents: "auto",
+            }}
+          >
+            <button
+              name=" btn btn-lg "
               type="button"
               style={{
+                backgroundColor: "rgb(63, 66, 87)",
+                width: "150px",
                 borderRadius: "10px",
-                boxShadow: "5px 10px #888888",
-                pointerEvents: "auto",
+                height: "40px",
+                color: "white",
               }}
             >
-              <span>Wallet connect</span>
+              Wallet connect
             </button>
           </div>
         </Navbar.Collapse>

@@ -5,7 +5,6 @@ import CardGroup from "react-bootstrap/CardGroup";
 import { Row, Col, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./BlackHistoryCards.css";
-import Create from "./Create";
 
 function BlackHistoryCards() {
   return (

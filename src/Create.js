@@ -5,8 +5,22 @@ import { MDBFile } from "mdb-react-ui-kit";
 import Box from "@mui/material/Box";
 
 class Create extends Component {
+  state = {
+    title: "",
+    description: "",
+  };
+
   handleChange = (e) => {
-    console.log(e.target.value);
+    this.setState({
+      title: e.target.value,
+      description: e.target.value,
+    });
+  };
+
+  handleClick = (e) => {
+    e.preventDefault();
+    console.log(this.state.title);
+    console.log(this.state.description);
   };
   render() {
     return (
@@ -16,12 +30,78 @@ class Create extends Component {
           style={{ backgroundColor: "rgb(46, 43, 43)" }}
         >
           <div className="row">
-            <div className="col-lg-6" style={{}}>
-              <div className="upload-formate mb--20">
-                <h6 className="title">
-                  <strong>Upload Asset file</strong>
-                </h6>
-                <p className="formate">Drag or choose a file to upload</p>
+            <div className="col-lg-6" style={{ color: "yellow" }}>
+              <div className="container ">
+                <form>
+                  <div className="mb-2">
+                    <label
+                      className="form-label"
+                      htmlFor="name"
+                      style={{ color: "yellow" }}
+                    >
+                      Name
+                    </label>
+                    <textarea
+                      style={{
+                        background: "white",
+                        color: "black",
+                        borderRadius: "10px",
+                      }}
+                      id="name"
+                      rows="1"
+                      cols="58"
+                      placeholder="Your Name"
+                      name="name"
+                    ></textarea>
+                  </div>
+                  <div className="mb-2">
+                    <label
+                      className="form-label"
+                      htmlFor="email"
+                      style={{ color: "yellow" }}
+                    >
+                      Email
+                    </label>
+                    <textarea
+                      style={{
+                        background: "white",
+                        color: "black",
+                        borderRadius: "10px",
+                      }}
+                      id="name"
+                      rows="1"
+                      cols="58"
+                      placeholder="Your Email"
+                      name="email"
+                    ></textarea>
+                  </div>
+                  <div className="mb-2">
+                    <label
+                      className="form-label"
+                      htmlFor="Telnumber"
+                      style={{ color: "yellow" }}
+                    >
+                      Phone Number
+                    </label>
+                    <textarea
+                      style={{
+                        background: "white",
+                        color: "black",
+                        borderRadius: "10px",
+                      }}
+                      id="name"
+                      rows="1"
+                      cols="58"
+                      placeholder=" Your Phone Number"
+                      name="phone number"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+              <div className="upload-formate " style={{ color: "yellow" }}>
+                <strong>Upload Asset file</strong>
+
+                <span> (Drag or choose a file to upload)</span>
               </div>
               <div className="upload-area" style={{ border: "dashed" }}>
                 <div
@@ -37,8 +117,8 @@ class Create extends Component {
               className="col-lg-6"
               style={{ background: "black", color: "yellow" }}
             >
-              <Box component="form">
-                <label for="name" className="form-label">
+              <Box component="form" onClick={this.handleClick}>
+                <label for="name" className="form-label mb-3">
                   Title
                 </label>
                 <textarea
@@ -48,43 +128,45 @@ class Create extends Component {
                     color: "black",
                     borderRadius: "10px",
                   }}
-                  id="name"
+                  id="title"
                   rows="1"
-                  cols="50"
+                  cols="58"
                   placeholder="Format: `Name_Date_Historian-Initials.Org`"
-                  name="Title"
+                  name="title"
                 ></textarea>
-                <label for="Discription" className="form-label">
+                <label for="Description" className="form-label mb-3 mt-5">
                   Description
                 </label>
                 <textarea
-                  id="discription"
-                  rows="4"
-                  cols="50"
+                  onChange={this.handleChange}
+                  id="description"
+                  rows="6"
+                  cols="58"
                   style={{ backgroundColor: "darkgrey", borderRadius: "10px" }}
                   placeholder="e.g. “Martin Luther King Jr. was a social activist and Baptist minister who played a key role in the American civil rights movement from the mid-1950s until his assassination in 1968.”"
-                  name="discription"
+                  name="description"
                 ></textarea>
                 <div className="btn-group">
                   <button
-                    className="btn btn-large btn-dark btn-space "
+                    className="btn btn-large  btn-space  mt-5"
                     type="submit"
                     data-btn="preview"
                     style={{
-                      margin: "5px 15px 5px 35px ",
+                      margin: "5px 35px 5px 0px ",
                       borderRadius: "10px",
-                      maxHeight: " min-content",
+                      backgroundColor: "rgb(63, 66, 87)",
                     }}
                   >
                     <span>Preview</span>
                   </button>{" "}
                   <button
-                    className="btn btn-large btn-primary btn-space  "
+                    onClick={this.handleClick}
+                    className="btn btn-large btn-primary btn-space  mt-5 "
                     type="submit"
                     style={{
-                      margin: "5px 35px 5px 15px ",
                       borderRadius: "10px",
-                      maxHeight: " min-content",
+                      margin: "5px 0px 5px 0px ",
+                      width: "320px",
                     }}
                   >
                     <span>Make Proposal</span>
