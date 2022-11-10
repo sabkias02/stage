@@ -49,7 +49,7 @@ class Create extends Component {
                       }}
                       id="name"
                       rows="1"
-                      cols="58"
+                      cols="40"
                       placeholder="Your Name"
                       name="name"
                     ></textarea>
@@ -70,7 +70,7 @@ class Create extends Component {
                       }}
                       id="name"
                       rows="1"
-                      cols="58"
+                      cols="40"
                       placeholder="Your Email"
                       name="email"
                     ></textarea>
@@ -91,19 +91,30 @@ class Create extends Component {
                       }}
                       id="name"
                       rows="1"
-                      cols="58"
+                      cols="40"
                       placeholder=" Your Phone Number"
                       name="phone number"
                     ></textarea>
                   </div>
                 </form>
               </div>
-              <div className="upload-formate " style={{ color: "yellow" }}>
+              <div
+                className="upload-formate "
+                style={{ color: "yellow", marginLeft: "10px" }}
+              >
                 <strong>Upload Asset file</strong>
 
                 <span> (Drag or choose a file to upload)</span>
               </div>
-              <div className="upload-area" style={{ border: "dashed" }}>
+              <div
+                className="upload-area  ml-2"
+                style={{
+                  border: "dashed",
+                  backgroundColor: "black",
+                  marginLeft: "10px",
+                  borderRadius: "10px",
+                }}
+              >
                 <div
                   className="upload"
                   style={{ color: "red", fontWeight: "Bold", fontSize: "20px" }}
@@ -114,11 +125,17 @@ class Create extends Component {
               </div>
             </div>
             <div
-              className="col-lg-6"
-              style={{ background: "black", color: "yellow" }}
+              className="col-lg-6 "
+              style={{
+                background: "black",
+                color: "yellow",
+                maxWidth: "500px",
+                borderRadius: "10px",
+                alignItems: "center",
+              }}
             >
               <Box component="form" onClick={this.handleClick}>
-                <label for="name" className="form-label mb-3">
+                <label htmlFor="name" className="form-label mb-3">
                   Title
                 </label>
                 <textarea
@@ -130,18 +147,18 @@ class Create extends Component {
                   }}
                   id="title"
                   rows="1"
-                  cols="58"
+                  cols="48"
                   placeholder="Format: `Name_Date_Historian-Initials.Org`"
                   name="title"
                 ></textarea>
-                <label for="Description" className="form-label mb-3 mt-5">
+                <label htmlFor="Description" className="form-label mb-3 mt-5">
                   Description
                 </label>
                 <textarea
                   onChange={this.handleChange}
                   id="description"
                   rows="6"
-                  cols="58"
+                  cols="48"
                   style={{ backgroundColor: "darkgrey", borderRadius: "10px" }}
                   placeholder="e.g. “Martin Luther King Jr. was a social activist and Baptist minister who played a key role in the American civil rights movement from the mid-1950s until his assassination in 1968.”"
                   name="description"
@@ -166,7 +183,7 @@ class Create extends Component {
                     style={{
                       borderRadius: "10px",
                       margin: "5px 0px 5px 0px ",
-                      width: "320px",
+                      width: "250px",
                     }}
                   >
                     <span>Make Proposal</span>
