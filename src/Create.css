@@ -5,12 +5,9 @@ background-color: rgb(46, 43, 43);
 
 }
 
-
-
 .container-fluid {
 
 margin: 20px;
-
 
 }
 
@@ -21,9 +18,12 @@ max-height:1000px;
 
 }
 
-
-  
+ 
   .btn-space {
     margin-right: 20px;
 }
 
+.container-fluid{
+
+    background-color: rgb(46, 43, 43)
+}

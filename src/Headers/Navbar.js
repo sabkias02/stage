@@ -9,8 +9,8 @@ import "./Navbar.css";
 
 function NavScroll() {
   return (
-    <Navbar bg="dark" expand="lg" variant="dark" className="sticky">
-      <Container fluid className="Container">
+    <Navbar className="sticky navbar navbar-expand-lg navbar-black bg-black">
+      <Container fluid className="Container  bg-black">
         <Navbar.Brand href="#">
           <img src={require("./logo-white.png")} alt="" />
         </Navbar.Brand>
@@ -21,10 +21,12 @@ function NavScroll() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Link to="/Home" style={{ paddingRight: "20px" }}>
+            <Link to="/Home" style={{ paddingRight: "20px", color: "#acacac" }}>
               Home
             </Link>
-            <Link to="Create">Create proposal</Link>
+            <Link to="Create" style={{ color: "#acacac" }}>
+              Create proposal
+            </Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -59,10 +61,17 @@ function NavScroll() {
               type="button"
               style={{
                 backgroundColor: "rgb(63, 66, 87)",
-                width: "150px",
+
                 borderRadius: "10px",
                 height: "40px",
                 color: "white",
+                Padding: "10px 16px",
+
+                letterSspacing: ".5px",
+                width: "auto",
+                border: 0,
+                boxShadow: "none",
+                outline: "none",
               }}
             >
               Wallet connect

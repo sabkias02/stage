@@ -23,7 +23,7 @@ const Filteritems = () => {
                   checked
                 />
                 <label className=" form-check-label" or="flexRadioDefault2">
-                  Newest
+                  &nbsp;&nbsp;&nbsp; Newest
                 </label>
               </div>
               <div className="form-check">
@@ -34,7 +34,7 @@ const Filteritems = () => {
                   id="flexRadioDefault1"
                 />
                 <label className="form-check-label" htmlFor="flexRadioDefault1">
-                  Oldest
+                  &nbsp;&nbsp;&nbsp;Oldest
                 </label>
               </div>
               <div className="form-check">
@@ -45,7 +45,7 @@ const Filteritems = () => {
                   id="flexRadioDefault1"
                 />
                 <label className="form-check-label" htmlFor="flexRadioDefault1">
-                  Most Liked
+                  &nbsp;&nbsp;&nbsp;Most Liked
                 </label>
               </div>
               <div className="form-check">
@@ -56,7 +56,7 @@ const Filteritems = () => {
                   id="flexRadioDefault1"
                 />
                 <label className="form-check-label" htmlFor="flexRadioDefault1">
-                  Least Liked
+                  &nbsp;&nbsp;&nbsp; Least Liked
                 </label>
               </div>
             </fieldset>
@@ -72,7 +72,10 @@ const Filteritems = () => {
                   value="all"
                   id="lang-check1"
                 />
-                <label htmlFor="lang-check1">All Language</label>
+                <label htmlFor="lang-check1">
+                  {" "}
+                  &nbsp;&nbsp;&nbsp;All Language
+                </label>
               </div>
               <div className="nuron-form-check">
                 <input
@@ -81,7 +84,10 @@ const Filteritems = () => {
                   id="lang-check-Russian"
                   value="Russian"
                 />
-                <label htmlFor="lang-check-Russian">Russian</label>
+                <label htmlFor="lang-check-Russian">
+                  {" "}
+                  &nbsp;&nbsp;&nbsp;Russian
+                </label>
               </div>
               <div className="nuron-form-check">
                 <input
@@ -90,7 +96,9 @@ const Filteritems = () => {
                   id="lang-check-Arabic"
                   value="Arabic"
                 />
-                <label htmlFor="lang-check-Arabic">Arabic</label>
+                <label htmlFor="lang-check-Arabic">
+                  &nbsp;&nbsp;&nbsp;Arabic
+                </label>
               </div>
               <div className="nuron-form-check">
                 <input
@@ -99,7 +107,9 @@ const Filteritems = () => {
                   id="lang-check-English"
                   value="English"
                 />
-                <label htmlFor="lang-check-English">English</label>
+                <label htmlFor="lang-check-English">
+                  &nbsp;&nbsp;&nbsp;English
+                </label>
               </div>
             </fieldset>
           </form>
@@ -114,7 +124,7 @@ const Filteritems = () => {
                   name="interest"
                   value="coding"
                 />
-                <label htmlFor="coding">All Eras</label>
+                <label htmlFor="coding">&nbsp;&nbsp;&nbsp;All Eras</label>
               </div>
               <div>
                 <input
@@ -123,7 +133,9 @@ const Filteritems = () => {
                   name="Pre Jim Crow"
                   value="Pre Jim Crow"
                 />
-                <label htmlFor="Pre Jim Crow">Pre Jim Crow</label>
+                <label htmlFor="Pre Jim Crow">
+                  &nbsp;&nbsp;&nbsp;Pre Jim Crow
+                </label>
               </div>
               <div>
                 <input
@@ -133,7 +145,7 @@ const Filteritems = () => {
                   value="Civil rights movement"
                 />
                 <label htmlFor="Civil rights movement">
-                  Civil rights movement
+                  &nbsp;&nbsp;&nbsp;Civil rights movement
                 </label>
               </div>
               <div>
@@ -143,7 +155,7 @@ const Filteritems = () => {
                   name="Jim Crow"
                   value="Jim Crow"
                 />
-                <label htmlFor="Jim Crow">Jim Crow</label>
+                <label htmlFor="Jim Crow">&nbsp;&nbsp;&nbsp;Jim Crow</label>
               </div>
               <div>
                 <input
@@ -152,7 +164,9 @@ const Filteritems = () => {
                   name="Black Lives Matter"
                   value="Black Lives Matter"
                 />
-                <label htmlFor="Black Lives Matter">Black Lives Matter</label>
+                <label htmlFor="Black Lives Matter">
+                  &nbsp;&nbsp;&nbsp;Black Lives Matter
+                </label>
               </div>
               <div>
                 <input
@@ -161,7 +175,9 @@ const Filteritems = () => {
                   name="Abolitionism"
                   value="Abolitionism"
                 />
-                <label htmlFor="Abolitionism">Abolitionism</label>
+                <label htmlFor="Abolitionism">
+                  &nbsp;&nbsp;&nbsp;Abolitionism
+                </label>
               </div>
             </fieldset>
           </form>
@@ -175,7 +191,7 @@ const Filteritems = () => {
                   name="century"
                   value="century"
                 />
-                <label htmlFor="century">2000'S (4)</label>
+                <label htmlFor="century">&nbsp;&nbsp;&nbsp;2000'S (4)</label>
               </div>
               <div>
                 <input
@@ -184,7 +200,7 @@ const Filteritems = () => {
                   name="century1"
                   value="century1"
                 />
-                <label htmlFor="century1">1800'S (1)</label>
+                <label htmlFor="century1">&nbsp;&nbsp;&nbsp;1800'S (1)</label>
               </div>
               <div>
                 <input
@@ -193,7 +209,7 @@ const Filteritems = () => {
                   name="century2"
                   value="century2"
                 />
-                <label htmlFor="century2">1900'S (1)</label>
+                <label htmlFor="century2">&nbsp;&nbsp;&nbsp;1900'S (1)</label>
               </div>
               <div>
                 <input
@@ -202,7 +218,7 @@ const Filteritems = () => {
                   name="century3"
                   value="century3"
                 />
-                <label htmlFor="century3">1600'S (1)</label>
+                <label htmlFor="century3">&nbsp;&nbsp;&nbsp;1600'S (1)</label>
               </div>
               <div>
                 <input
@@ -211,7 +227,7 @@ const Filteritems = () => {
                   name="century4"
                   value="century4"
                 />
-                <label htmlFor="century4">1700'S (1)</label>
+                <label htmlFor="century4">&nbsp;&nbsp;&nbsp;1700'S (1)</label>
               </div>
             </fieldset>
           </form>
@@ -227,7 +243,7 @@ const Filteritems = () => {
                   checked
                 />
                 <label className=" form-check-label" or="flexRadioDefault2">
-                  Price : Low to High
+                  &nbsp;&nbsp;&nbsp; Price : Low to High
                 </label>
               </div>
               <div className="form-check">
@@ -238,7 +254,7 @@ const Filteritems = () => {
                   id="flexRadioDefault1"
                 />
                 <label className="form-check-label" htmlFor="flexRadioDefault1">
-                  Price:High to Low
+                  &nbsp;&nbsp;&nbsp;Price:High to Low
                 </label>
               </div>
             </fieldset>
@@ -255,6 +271,7 @@ const Filteritems = () => {
                   id="5stars"
                 />
                 <label htmlFor="star-check5">
+                  &nbsp;&nbsp;&nbsp;
                   <span className="score">
                     <div className="score-wrap">
                       <span className="stars-active" style={{ width: "100%" }}>
@@ -283,6 +300,7 @@ const Filteritems = () => {
                   value="4stars"
                 />
                 <label htmlFor="star-check4">
+                  &nbsp;&nbsp;&nbsp;
                   <span className="score">
                     <div className="score-wrap">
                       <span className="stars-active" style={{ width: "80%" }}>
@@ -312,6 +330,7 @@ const Filteritems = () => {
                   value="3stars"
                 />
                 <label htmlFor="star-check3">
+                  &nbsp;&nbsp;&nbsp;
                   <span className="score">
                     <div className="score-wrap">
                       <span className="stars-active" style={{ width: "60%" }}>
@@ -340,6 +359,7 @@ const Filteritems = () => {
                   value="2stars"
                 />
                 <label htmlFor="star-check2">
+                  &nbsp;&nbsp;&nbsp;
                   <span className="score">
                     <div className="score-wrap">
                       <span className="stars-active" style={{ width: "40%" }}>

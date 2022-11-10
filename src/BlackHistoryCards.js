@@ -8,7 +8,7 @@ import "./BlackHistoryCards.css";
 
 function BlackHistoryCards() {
   return (
-    <div>
+    <div className="bg-black">
       <CardGroup className="discover">
         <Card className="dao1 ">
           <Card.Body className="card1">
@@ -29,7 +29,7 @@ function BlackHistoryCards() {
                 href="/"
                 style={{
                   borderRadius: "10px",
-                  boxShadow: "5px 10px #888888",
+                  boxShadow: "none",
                   pointerEvents: "auto",
                 }}
                 className="btn btn-large btn-primary sal-animate btn-space"
@@ -43,10 +43,11 @@ function BlackHistoryCards() {
                 <Button
                   style={{
                     borderRadius: "10px",
-                    boxShadow: "5px 10px #888888",
+                    boxShadow: "none",
                     pointerEvents: "auto",
+                    backgroundColor: "#636c7e",
                   }}
-                  className="btn btn-large btn-secondary sal-animate btn-space"
+                  className="btn btn-large bg-#636c7e  sal-animate btn-space"
                   data-sal-delay="500"
                   data-sal="slide-up"
                   data-sal-duration="800"

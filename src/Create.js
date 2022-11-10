@@ -3,6 +3,7 @@ import "./Create.css";
 import "mdbreact/dist/css/mdb.css";
 import { MDBFile } from "mdb-react-ui-kit";
 import Box from "@mui/material/Box";
+import * as Icon from "react-feather";
 
 class Create extends Component {
   state = {
@@ -23,12 +24,38 @@ class Create extends Component {
     console.log(this.state.description);
   };
   render() {
+    const myStyle = {
+      background: "white",
+      color: "black",
+      borderRadius: "10px",
+    };
     return (
       <div>
-        <div
-          className="container-fluid"
-          style={{ backgroundColor: "rgb(46, 43, 43)" }}
-        >
+        <div class="rn-breadcrumb-inner ptb--30">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6 col-12">
+                <h4 class="pageTitle text-center text-md-start">
+                  Create New Proposal
+                </h4>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <ul class="breadcrumb-list">
+                  <li class="item">
+                    <a href="/">Home</a>
+                  </li>
+
+                  <li class="separator">
+                    <i class="Icon.feather-chevron-right"></i>
+                  </li>
+                  <li class="item current">Create New Proposal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6" style={{ color: "yellow" }}>
               <div className="container ">
@@ -42,11 +69,7 @@ class Create extends Component {
                       Name
                     </label>
                     <textarea
-                      style={{
-                        background: "white",
-                        color: "black",
-                        borderRadius: "10px",
-                      }}
+                      style={myStyle}
                       id="name"
                       rows="1"
                       cols="40"
@@ -63,11 +86,7 @@ class Create extends Component {
                       Email
                     </label>
                     <textarea
-                      style={{
-                        background: "white",
-                        color: "black",
-                        borderRadius: "10px",
-                      }}
+                      style={myStyle}
                       id="name"
                       rows="1"
                       cols="40"
@@ -84,11 +103,7 @@ class Create extends Component {
                       Phone Number
                     </label>
                     <textarea
-                      style={{
-                        background: "white",
-                        color: "black",
-                        borderRadius: "10px",
-                      }}
+                      style={myStyle}
                       id="name"
                       rows="1"
                       cols="40"
@@ -125,11 +140,11 @@ class Create extends Component {
               </div>
             </div>
             <div
-              className="col-lg-6 "
+              className="col-lg-6 mt-4 "
               style={{
                 background: "black",
                 color: "yellow",
-                maxWidth: "500px",
+                maxWidth: "470px",
                 borderRadius: "10px",
                 alignItems: "center",
               }}
@@ -140,11 +155,7 @@ class Create extends Component {
                 </label>
                 <textarea
                   onChange={this.handleChange}
-                  style={{
-                    background: "white",
-                    color: "black",
-                    borderRadius: "10px",
-                  }}
+                  style={myStyle}
                   id="title"
                   rows="1"
                   cols="48"
