@@ -1,49 +1,339 @@
 
-body {
+* {
+
+    box-sizing: border-box;
+
 
   background-color: black;
 }
 
-
-Navbar{
-
-  background-color: black;
-
-  position: fixed;
-  top: 0;
-  width: 100%;
-
+.search-form-wrapper {
+  position: relative;
+  background: transparent;
+    border-color: #ffffff14;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #acacac;
+    outline: none;
+    box-shadow: none;
+    transition: .4s;
+    padding: 0 35px 0 15px;
+    
 }
 
-Navbar.Brand{
-  inset: 0px; 
-  box-sizing: border-box; 
-  padding: 0px; 
-  border: none; 
-  margin: auto; 
-  display: block; 
-  width: 0px; 
-  height: 0px; 
-  min-width: 100%;
-   max-width: 100%;
+.search-form-wrapper .search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+}
+
+.search-form-wrapper .search-icon button  .feather-search {
+  font-family: feather!important;
   
+  font-style: normal;
+  font-weight: 400;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+
+.search-form-wrapper .search-icon button {
+  border: 0;
+  padding: 0;
+}
+
+
+.rn-header.header--sticky {
+  position: sticky!important;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  border-bottom: 1px solid hsla(0,0%,100%,.078);
+  
+    font-size: 14px;
+    line-height: 1,5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto" , sans-serif;
+    color: #acacac;
+    font-weight: 400;
+    position: relative;
 
 
 }
+button {
+  background: transparent;
+ 
+  transition: all .4s ease-out 0s;
+  color: #acacac;
+  width: 100%;
+  line-height: normal;
+  font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    writing-mode: horizontal-tb !important;
+}
 
-Nav Link {
 
+.mainmenu-nav .mainmenu li a {
   font-weight: 500;
   padding: 28px 12px;
   font-size: 16px;
   display: block;
-  color:#acacac;
+  color: #acacac;
   margin: 0 8px;
   border-radius: 3px;
   transition: var(--transition);
 
+}
+.container {
+  padding: 2px 16px;
+  -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.haeder-default .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-size: 14px;
+    line-height: 1,5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto" , sans-serif;
+    color:#acacac;
+    font-weight: 400;
+    position: relative;
+}
+
+.haeder-default .header-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-basis: 55%;
+}
+.rn-header .logo-thumbnail {
+  padding-right: 32px;
+  position: relative;
+  margin-right: 17px;
+}
+.logo-thumbnail a {
+  display: block;
+  line-height: .8;
+}
+
+.logo-custom-css .logo-dark {
+  display: none;
+}
+
+.mainmenu-wrapper {
+  display: block;
+  font-size: 14px;
+  line-height: 1,5;
+  -webkit-font-smoothing: antialiased;
+  
+  font-family: "Roboto" , sans-serif;
+  color:#acacac;
+  font-weight: 400;
+}
 
 
 
+.d-xl-block {
+    display: block!important;
+}
+.mainmenu-nav .mainmenu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.mainmenu-nav .mainmenu li {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.mainmenu-nav .mainmenu li a {
+  padding: 28px 6px;
+}
+
+.haeder-default .header-right {
+  justify-content: flex-end;
+  display: flex;
+  flex-basis: 45%;
+  align-items: center;
+}
+
+.haeder-default .header-right .setting-option {
+  margin: 0 5px;
+}
+
+.d-lg-block {
+  display: block!important;
+}
+.search-form-wrapper {
+  position: relative;
+}
+
+[class*=" feather-"], [class^=feather-] {
+  font-family: feather!important;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.d-lg-none {
+    display: none!important;
+    margin: 0 5px;
+  
+}
+
+ .icon-box>button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-border);
+  text-align: center;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-body);
+  position: relative;
+  z-index: 2;
+}
+
+.popup-mobile-menu {
+  z-index: 9999;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s ease-out;
+}
+.haeder-default .header-right .connectBtn {
+  padding: 10px 11px;
+  font-size: 12px;
+  border-radius: 6px;
+  
+}
+
+a.btn.btn-primary-alta, button.btn.btn-primary-alta {
+  background: #212e48;
+  color: #fff;
+  font-family: inherit;
+  text-transform: capitalize;
+}
+
+.btn {
+  
+  line-height: 1.5;
+  
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ 
+
+}
+a.btn, button.btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  
+
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: 0.4s;;
+  letter-spacing: .5px;
+  width: auto;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.search-form-wrapper .search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    
+
+}
+.search-form-wrapper input {
+  background: transparent;
+  border-color: #ffffff14;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #acacac;
+  outline: none;
+  box-shadow: none;
+  transition: .4s;
+  padding: 0 35px 0 15px;
+ 
+}
+input {
+width: 250px;
+appearance: textfield;
+outline-offset: -2px;
+height: 40px;
+border: 1px solid #ffffff14;;
+}
+
+search-form-wrapper .search-icon button {
+  border: 0;
+  padding: 0;
 }

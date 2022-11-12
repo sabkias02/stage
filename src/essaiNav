@@ -1,0 +1,2645 @@
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import React from "react";
+import { Link } from "react-router-dom";
+
+import "./Navbar.css";
+import * as Icon from "react-feather";
+
+
+
+Navbar{
+
+    background-color: black;
+  
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
+  }
+  
+  Navbar.Brand{
+    inset: 0px; 
+    box-sizing: border-box; 
+    padding: 0px; 
+    border: none; 
+    margin: auto; 
+  
+    display: block; 
+    width: 0px; 
+    height: 0px; 
+    min-width: 100%;
+     max-width: 100%;
+    
+  
+  
+  
+  }
+  
+  Nav Link {
+  
+    font-weight: 500;
+    padding: 28px 12px;
+    font-size: 16px;
+    display: block;
+    color:#acacac;
+    margin: 0 8px;
+    border-radius: 3px;
+    transition: var(--transition);
+  
+  
+  
+  
+  }
+
+function NavScroll() {
+  return (
+    <Navbar className="sticky navbar navbar-expand-lg navbar-black bg-black">
+      <Container fluid className="Container  bg-black">
+        <Navbar.Brand href="#">
+          <img src={require("./logo-white.png")} alt="" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: "100px" }}
+            navbarScroll
+          >
+            <Link to="/Home" style={{ paddingRight: "20px", color: "#acacac" }}>
+              Home
+            </Link>
+            <Link to="Create" style={{ color: "#acacac" }}>
+              Create proposal
+            </Link>
+          </Nav>
+          <form class="search-form-wrapper" action="#">
+            <input
+              type="search"
+              placeholder="Search Here"
+              aria-label="Search"
+            />
+            <div className="search-icon">
+              <button type="button">
+                <i className="feather-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <div
+            className="icon-box"
+            style={{
+              borderRadius: "10px",
+
+              pointerEvents: "auto",
+            }}
+          >
+            <button
+              name=" btn btn-lg "
+              type="button"
+              style={{
+                backgroundColor: "rgb(63, 66, 87)",
+
+                borderRadius: "10px",
+                height: "40px",
+                color: "white",
+                Padding: "10px 16px",
+
+                letterSpacing: ".5px",
+                width: "auto",
+                border: 0,
+                boxShadow: "none",
+                outline: "none",
+              }}
+            >
+              Wallet connect
+            </button>
+          </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default NavScroll;
+XXXXXXXXXXXXXXXXXXXXX**************************************************************
+***********************************************************************************
+*******************************************************************************
+*********************************************************************************
+
+
+import React from "react";
+
+const Navbar1111 = () => {
+  return (
+    <div>
+      
+        
+        <main id="main-content">
+          <div className="slider-one rn-section-gapTop">
+            <div className="container">
+              <div className="row row-reverce-sm align-items-center">
+                <div className="col-lg-5 col-md-6 col-sm-12 mt_sm--50">
+                  <h2
+                    className="title sal-animate"
+                    data-sal-delay="200"
+                    data-sal="slide-up"
+                    data-sal-duration="800"
+                  >
+                    Discover Digital Pieces Of Black History In The Metaverse
+                  </h2>
+                  <p
+                    className="slide-disc sal-animate"
+                    data-sal-delay="300"
+                    data-sal="slide-up"
+                    data-sal-duration="800"
+                  ></p>
+                  <div className="button-group">
+                    <a
+                      href="/"
+                      className="btn btn-large btn-primary sal-animate"
+                      data-sal-delay="400"
+                      data-sal="slide-up"
+                      data-sal-duration="800"
+                    >
+                      <span>Become a verifier</span>
+                    </a>
+                    <a
+                      href="/create"
+                      className="btn btn-large btn-primary-alta sal-animate"
+                      data-sal-delay="500"
+                      data-sal="slide-up"
+                      data-sal-duration="800"
+                    >
+                      <span>Create Proposal</span>
+                    </a>
+                  </div>
+                </div>
+                <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
+                  <div className="slider-thumbnail">
+                    <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                      <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27585%27%20height=%27593%27/%3e"
+                          style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                        />
+                      </span>
+                      <img
+                        alt="Slider Images"
+                        srcset="/_next/image?url=%2Fimages%2Fslider%2Fslider-1.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fslider%2Fslider-1.png&amp;w=1200&amp;q=75 2x"
+                        src="/_next/image?url=%2Fimages%2Fslider%2Fslider-1.png&amp;w=1200&amp;q=75"
+                        decoding="async"
+                        data-nimg="intrinsic"
+                        style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="rn-collection-area rn-section-gapTop">
+            <div className="container">
+              <div className="row mb--50 align-items-center">
+                <div className="col-lg-6 col-md-6 col-sm-6 col-12">
+                  <h3
+                    className="title mb--0 sal-animate"
+                    data-sal-delay="150"
+                    data-sal="slide-up"
+                    data-sal-duration="800"
+                  >
+                    Top Historic Collections
+                  </h3>
+                </div>
+                <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--15">
+                  <div
+                    className="view-more-btn text-start text-sm-end sal-animate"
+                    data-sal-delay="150"
+                    data-sal="slide-up"
+                    data-sal-duration="800"
+                  >
+                    <a href="/collection" className="btn-transparent">
+                      VIEW ALL<i className="feather feather-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="row g-5">
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12 sal-animate"
+                >
+                  <a href="/collection" className="rn-collection-inner-one">
+                    <div className="collection-wrapper">
+                      <div className="collection-big-thumbnail">
+                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27507%27%20height=%27339%27/%3e"
+                              style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Nft_Profile"
+                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault.jpg&amp;w=1080&amp;q=75 2x"
+                            src="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault.jpg&amp;w=1080&amp;q=75"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                          />
+                        </span>
+                      </div>
+                      <div className="collenction-small-thumbnail">
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fk49zswc29d.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fk49zswc29d.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fk49zswc29d.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2F05_17.3_1954.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2F05_17.3_1954.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2F05_17.3_1954.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fcollection-sm-03.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fcollection-sm-03.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fcollection-sm-03.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="collection-deg">
+                        <h6 className="title">Separate But Equal</h6>
+                        <span className="items">27 items</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12 sal-animate"
+                >
+                  <a href="/collection" className="rn-collection-inner-one">
+                    <div className="collection-wrapper">
+                      <div className="collection-big-thumbnail">
+                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27507%27%20height=%27339%27/%3e"
+                              style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Nft_Profile"
+                            srcset="/_next/image?url=%2Fimages%2Fcollection%2F3jimc0315m.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2F3jimc0315m.jpg&amp;w=1080&amp;q=75 2x"
+                            src="/_next/image?url=%2Fimages%2Fcollection%2F3jimc0315m.jpg&amp;w=1080&amp;q=75"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                          />
+                        </span>
+                      </div>
+                      <div className="collenction-small-thumbnail">
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault-2.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault-2.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault-2.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fimages-2.jpeg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fimages-2.jpeg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fimages-2.jpeg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="collection-deg">
+                        <h6 className="title">Jim Crow:Equal Opportunity</h6>
+                        <span className="items">20 items</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12 sal-animate"
+                >
+                  <a href="/collection" className="rn-collection-inner-one">
+                    <div className="collection-wrapper">
+                      <div className="collection-big-thumbnail">
+                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27507%27%20height=%27339%27/%3e"
+                              style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Nft_Profile"
+                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm1.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm1.jpg&amp;w=1080&amp;q=75 2x"
+                            src="/_next/image?url=%2Fimages%2Fcollection%2Fblm1.jpg&amp;w=1080&amp;q=75"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                          />
+                        </span>
+                      </div>
+                      <div className="collenction-small-thumbnail">
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm3.jfif&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm3.jfif&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fblm3.jfif&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="collection-deg">
+                        <h6 className="title">Black Lives Matter -06/20</h6>
+                        <span className="items">15 items</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12 sal-animate"
+                >
+                  <a href="/collection" className="rn-collection-inner-one">
+                    <div className="collection-wrapper">
+                      <div className="collection-big-thumbnail">
+                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27507%27%20height=%27339%27/%3e"
+                              style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Nft_Profile"
+                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=1080&amp;q=75 2x"
+                            src="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=1080&amp;q=75"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                          />
+                        </span>
+                      </div>
+                      <div className="collenction-small-thumbnail">
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill4.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill4.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Ftill4.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill2.webp&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill2.webp&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Ftill2.webp&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="collection-deg">
+                        <h6 className="title">Emmett Till</h6>
+                        <span className="items">27 items</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="explore-area rn-section-gapTop" id="explore-id">
+            <div className="container">
+              <div className="row mb--40">
+                <div className="col-12"></div>
+              </div>
+              <div className="row g-5">
+                <div className="col-lg-3 order-2 order-lg-1">
+                  <div className="nu-course-sidebar">
+                    <div className="nuron-expo-filter-widget widget-shortby">
+                      <div className="inner">
+                        <h5 className="widget-title">Sort By</h5>
+                        <div className="content">
+                          <div className="nuron-form-check">
+                            <input
+                              type="radio"
+                              name="sort"
+                              id="short-check1"
+                              value="newest"
+                              checked=""
+                            />
+                            <label for="short-check1">Newest</label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="radio"
+                              name="sort"
+                              id="short-check2"
+                              value="oldest"
+                            />
+                            <label for="short-check2">Oldest</label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="radio"
+                              name="sort"
+                              id="short-check3"
+                              value="most-liked"
+                            />
+                            <label for="short-check3">Most Liked</label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="radio"
+                              name="sort"
+                              id="short-check4"
+                              value="least-liked"
+                            />
+                            <label for="short-check4">Least Liked</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="nuron-expo-filter-widget widget-category mt--30">
+                      <div className="inner">
+                        <h5 className="widget-title">Century</h5>
+                        <div className="content">
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="categories"
+                              id="cat-check-2000's"
+                              value="2000's"
+                            />
+                            <label
+                              for="cat-check-2000's"
+                              className="text-capitalize"
+                            >
+                              2000's <span>(4)</span>
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="categories"
+                              id="cat-check-1800's"
+                              value="1800's"
+                            />
+                            <label
+                              for="cat-check-1800's"
+                              className="text-capitalize"
+                            >
+                              1800's <span>(1)</span>
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="categories"
+                              id="cat-check-1900's"
+                              value="1900's"
+                            />
+                            <label
+                              for="cat-check-1900's"
+                              className="text-capitalize"
+                            >
+                              1900's <span>(1)</span>
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="categories"
+                              id="cat-check-1600's"
+                              value="1600's"
+                            />
+                            <label
+                              for="cat-check-1600's"
+                              className="text-capitalize"
+                            >
+                              1600's <span>(1)</span>
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="categories"
+                              id="cat-check-1700's"
+                              value="1700's"
+                            />
+                            <label
+                              for="cat-check-1700's"
+                              className="text-capitalize"
+                            >
+                              1700's <span>(1)</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="nuron-expo-filter-widget widget-shortby mt--30">
+                      <div className="inner">
+                        <h5 className="widget-title">Eras</h5>
+                        <div className="content">
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="level"
+                              id="level-check1"
+                              value="all"
+                            />
+                            <label for="level-check1">All Eras</label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="level"
+                              id="level-check-Pre Jim Crow"
+                              value="Pre Jim Crow"
+                            />
+                            <label for="level-check-Pre Jim Crow">
+                              Pre Jim Crow
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="level"
+                              id="level-check-Civil rights movement"
+                              value="Civil rights movement"
+                            />
+                            <label for="level-check-Civil rights movement">
+                              Civil rights movement
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="level"
+                              id="level-check-Jim Crow"
+                              value="Jim Crow"
+                            />
+                            <label for="level-check-Jim Crow">Jim Crow</label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="level"
+                              id="level-check-Black Lives Matter"
+                              value="Black Lives Matter"
+                            />
+                            <label for="level-check-Black Lives Matter">
+                              Black Lives Matter
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="level"
+                              id="level-check-Abolitionism"
+                              value="Abolitionism"
+                            />
+                            <label for="level-check-Abolitionism">
+                              Abolitionism
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="nuron-expo-filter-widget widget-shortby mt--30">
+                      <div className="inner">
+                        <h5 className="widget-title">Sort By Price</h5>
+                        <div className="content">
+                          <div className="nuron-form-check">
+                            <input
+                              type="radio"
+                              name="sort"
+                              id="price-check1"
+                              value="low-to-high"
+                            />
+                            <label for="price-check1">Price: Low to High</label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="radio"
+                              name="sort"
+                              id="price-check2"
+                              value="high-to-low"
+                            />
+                            <label for="price-check2">Price: High to Low</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="nuron-expo-filter-widget widget-shortby mt--30">
+                      <div className="inner">
+                        <h5 className="widget-title">Language</h5>
+                        <div className="content">
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="level"
+                              id="lang-check1"
+                              value="all"
+                            />
+                            <label for="lang-check1">All Language</label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="language"
+                              id="lang-check-Russian"
+                              value="Russian"
+                            />
+                            <label for="lang-check-Russian">Russian</label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="language"
+                              id="lang-check-Arabic"
+                              value="Arabic"
+                            />
+                            <label for="lang-check-Arabic">Arabic</label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="language"
+                              id="lang-check-English"
+                              value="English"
+                            />
+                            <label for="lang-check-English">English</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="nuron-expo-filter-widget widget-shortby mt--30">
+                      <div className="inner">
+                        <h5 className="widget-title">Filter By Rating</h5>
+                        <div className="content">
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="rating"
+                              id="rating-check1"
+                              value="5"
+                            />
+                            <label for="rating-check1">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="rating"
+                              id="rating-check2"
+                              value="4"
+                            />
+                            <label for="rating-check2">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="rating"
+                              id="rating-check3"
+                              value="3"
+                            />
+                            <label for="rating-check3">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="rating"
+                              id="rating-check4"
+                              value="2"
+                            />
+                            <label for="rating-check4">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                            </label>
+                          </div>
+                          <div className="nuron-form-check">
+                            <input
+                              type="checkbox"
+                              name="rating"
+                              id="rating-check5"
+                              value="1"
+                            />
+                            <label for="rating-check5">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-star-fill off"
+                                viewBox="0 0 16 16"
+                              >
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                              </svg>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="nuron-expo-filter-widget widget-shortby mt--30">
+                      <div className="inner">
+                        <h5 className="widget-title">Filter By Price</h5>
+                        <div className="content">
+                          <div className="price_filter s-filter clear">
+                            <div className="input-range">
+                              <div
+                                className="slider-track-container"
+                                style={{transform: scale(1); cursor: inherit; background: linear-gradient(to right, var(--color-primary-alta) 0%, var(--color-primary-alta) 0%, var(--color-primary) 0%, var(--color-primary) 100%, var(--color-primary-alta) 100%, var(--color-primary-alta) 100%);"
+                              >
+                                <div className="slider-track">
+                                  <div
+                                    className="slider-thumb-container"
+                                    tabindex="0"
+                                    aria-valuemax="100"
+                                    aria-valuemin="0"
+                                    aria-valuenow="0"
+                                    draggable="false"
+                                    role="slider"
+                                    style={{position: "absolute", z-index: 0; cursor: grab; user-select: none; touch-action: none; transform: translate(0px, 0px);"
+                                  >
+                                    <div
+                                      className="slider-thumb"
+                                      style={{position: "absolute", z-index: 0; cursor: grab; user-select: none; touch-action: none;"
+                                    ></div>
+                                  </div>
+                                  <div
+                                    className="slider-thumb-container"
+                                    tabindex="0"
+                                    aria-valuemax="100"
+                                    aria-valuemin="0"
+                                    aria-valuenow="100"
+                                    draggable="false"
+                                    role="slider"
+                                    style={{position: "absolute", z-index: 1; cursor: grab; user-select: none; touch-action: none; transform: translate(192.5px, 0px);"
+                                  >
+                                    <div
+                                      className="slider-thumb"
+                                      style={{position: "absolute", z-index: 1; cursor: grab; user-select: none; touch-action: none;"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="slider__range--output">
+                                <div className="price__output--wrap">
+                                  <div className="price--output">
+                                    <span>Price :</span>
+                                    <span className="output-label">
+                                      $0 - $100
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-9 order-1 order-lg-2">
+                  <div className="row g-5">
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                      <div className="product-style-{{ne no-overlay">
+                        <div className="card-thumbnail">
+                          <a href="/product">
+                            <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                              <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27533%27%20height=%27533%27/%3e"
+                                  style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                                />
+                              </span>
+                              <img
+                                alt="NFT_portfolio"
+                                srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp;w=1080&amp;q=75 2x"
+                                src="/_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp;w=1080&amp;q=75"
+                                decoding="async"
+                                data-nimg="intrinsic"
+                                style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              />
+                            </span>
+                          </a>
+                        </div>
+                        <div className="product-share-wrapper">
+                          <div className="profile-share">
+                            <a href="/" className="more-author-text">
+                              6+ Place Bit.
+                            </a>
+                          </div>
+                          <div className="share-btn share-btn-activation dropdown">
+                            <button
+                              type="button"
+                              id="react-aria385022526-57"
+                              aria-expanded="false"
+                              className="icon p-0 btn btn-link"
+                            >
+                              <svg
+                                viewBox="0 0 14 4"
+                                fill="none"
+                                width="16"
+                                height="16"
+                                className="sc-bdnxRM sc-hKFxyN hOiKLt"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="/">
+                          <span className="product-name">BHD_PROPOSAL@ID</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                      <div className="product-style-{{ne no-overlay">
+                        <div className="card-thumbnail">
+                          <a href="/product">
+                            <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                              <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27533%27%20height=%27533%27/%3e"
+                                  style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                                />
+                              </span>
+                              <img
+                                alt="NFT_portfolio"
+                                srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp;w=1080&amp;q=75 2x"
+                                src="/_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp;w=1080&amp;q=75"
+                                decoding="async"
+                                data-nimg="intrinsic"
+                                style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              />
+                            </span>
+                          </a>
+                        </div>
+                        <div className="product-share-wrapper">
+                          <div className="profile-share">
+                            <a href="/" className="more-author-text">
+                              10+ Place Bit.
+                            </a>
+                          </div>
+                          <div className="share-btn share-btn-activation dropdown">
+                            <button
+                              type="button"
+                              id="react-aria385022526-58"
+                              aria-expanded="false"
+                              className="icon p-0 btn btn-link"
+                            >
+                              <svg
+                                viewBox="0 0 14 4"
+                                fill="none"
+                                width="16"
+                                height="16"
+                                className="sc-bdnxRM sc-hKFxyN hOiKLt"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="/">
+                          <span className="product-name">BHD_PROPOSAL@ID</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                      <div className="product-style-{{ne no-overlay">
+                        <div className="card-thumbnail">
+                          <a href="/product">
+                            <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                              <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27533%27%20height=%27533%27/%3e"
+                                  style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                                />
+                              </span>
+                              <img
+                                alt="NFT_portfolio"
+                                srcset="/_next/image?url=%2Fimages%2Fcollection%2Fnatturner3.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fnatturner3.jpg&amp;w=1080&amp;q=75 2x"
+                                src="/_next/image?url=%2Fimages%2Fcollection%2Fnatturner3.jpg&amp;w=1080&amp;q=75"
+                                decoding="async"
+                                data-nimg="intrinsic"
+                                style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              />
+                            </span>
+                          </a>
+                        </div>
+                        <div className="product-share-wrapper">
+                          <div className="profile-share">
+                            <a href="/" className="more-author-text">
+                              7+ Place Bit.
+                            </a>
+                          </div>
+                          <div className="share-btn share-btn-activation dropdown">
+                            <button
+                              type="button"
+                              id="react-aria385022526-59"
+                              aria-expanded="false"
+                              className="icon p-0 btn btn-link"
+                            >
+                              <svg
+                                viewBox="0 0 14 4"
+                                fill="none"
+                                width="16"
+                                height="16"
+                                className="sc-bdnxRM sc-hKFxyN hOiKLt"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="/">
+                          <span className="product-name">BHD_PROPOSAL@ID</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                      <div className="product-style-{{ne no-overlay">
+                        <div className="card-thumbnail">
+                          <a href="/product">
+                            <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                              <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27533%27%20height=%27533%27/%3e"
+                                  style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                                />
+                              </span>
+                              <img
+                                alt="NFT_portfolio"
+                                srcset="/_next/image?url=%2Fimages%2Fcollection%2Funderground3.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Funderground3.jpg&amp;w=1080&amp;q=75 2x"
+                                src="/_next/image?url=%2Fimages%2Fcollection%2Funderground3.jpg&amp;w=1080&amp;q=75"
+                                decoding="async"
+                                data-nimg="intrinsic"
+                                style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              />
+                            </span>
+                          </a>
+                        </div>
+                        <div className="product-share-wrapper">
+                          <div className="profile-share">
+                            <a href="/" className="more-author-text">
+                              5+ Place Bit.
+                            </a>
+                          </div>
+                          <div className="share-btn share-btn-activation dropdown">
+                            <button
+                              type="button"
+                              id="react-aria385022526-60"
+                              aria-expanded="false"
+                              className="icon p-0 btn btn-link"
+                            >
+                              <svg
+                                viewBox="0 0 14 4"
+                                fill="none"
+                                width="16"
+                                height="16"
+                                className="sc-bdnxRM sc-hKFxyN hOiKLt"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="/">
+                          <span className="product-name">BHD_PROPOSAL@ID</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                      <div className="product-style-{{ne no-overlay">
+                        <div className="card-thumbnail">
+                          <a href="/product">
+                            <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                              <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27533%27%20height=%27533%27/%3e"
+                                  style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                                />
+                              </span>
+                              <img
+                                alt="NFT_portfolio"
+                                srcset="/_next/image?url=%2Fimages%2Fcollection%2Fjohnbrown4.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fjohnbrown4.jpg&amp;w=1080&amp;q=75 2x"
+                                src="/_next/image?url=%2Fimages%2Fcollection%2Fjohnbrown4.jpg&amp;w=1080&amp;q=75"
+                                decoding="async"
+                                data-nimg="intrinsic"
+                                style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              />
+                            </span>
+                          </a>
+                        </div>
+                        <div className="product-share-wrapper">
+                          <div className="profile-share">
+                            <a href="/" className="more-author-text">
+                              12+ Place Bit.
+                            </a>
+                          </div>
+                          <div className="share-btn share-btn-activation dropdown">
+                            <button
+                              type="button"
+                              id="react-aria385022526-61"
+                              aria-expanded="false"
+                              className="icon p-0 btn btn-link"
+                            >
+                              <svg
+                                viewBox="0 0 14 4"
+                                fill="none"
+                                width="16"
+                                height="16"
+                                className="sc-bdnxRM sc-hKFxyN hOiKLt"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="/">
+                          <span className="product-name">BHD_PROPOSAL@ID</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                      <div className="product-style-{{ne no-overlay">
+                        <div className="card-thumbnail">
+                          <a href="/product">
+                            <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                              <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27533%27%20height=%27533%27/%3e"
+                                  style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                                />
+                              </span>
+                              <img
+                                alt="NFT_portfolio"
+                                srcset="/_next/image?url=%2Fimages%2Fcollection%2Fcotton1.jfif&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fcotton1.jfif&amp;w=1080&amp;q=75 2x"
+                                src="/_next/image?url=%2Fimages%2Fcollection%2Fcotton1.jfif&amp;w=1080&amp;q=75"
+                                decoding="async"
+                                data-nimg="intrinsic"
+                                style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              />
+                            </span>
+                          </a>
+                        </div>
+                        <div className="product-share-wrapper">
+                          <div className="profile-share">
+                            <a href="/" className="more-author-text">
+                              30+ Place Bit.
+                            </a>
+                          </div>
+                          <div className="share-btn share-btn-activation dropdown">
+                            <button
+                              type="button"
+                              id="react-aria385022526-62"
+                              aria-expanded="false"
+                              className="icon p-0 btn btn-link"
+                            >
+                              <svg
+                                viewBox="0 0 14 4"
+                                fill="none"
+                                width="16"
+                                height="16"
+                                className="sc-bdnxRM sc-hKFxyN hOiKLt"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="/">
+                          <span className="product-name">BHD_PROPOSAL@ID</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                      <div className="product-style-{{ne no-overlay">
+                        <div className="card-thumbnail">
+                          <a href="/product">
+                            <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                              <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27533%27%20height=%27533%27/%3e"
+                                  style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                                />
+                              </span>
+                              <img
+                                alt="NFT_portfolio"
+                                srcset="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=1080&amp;q=75 2x"
+                                src="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=1080&amp;q=75"
+                                decoding="async"
+                                data-nimg="intrinsic"
+                                style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              />
+                            </span>
+                          </a>
+                        </div>
+                        <div className="product-share-wrapper">
+                          <div className="profile-share">
+                            <a href="/" className="more-author-text">
+                              10+ Place Bit.
+                            </a>
+                          </div>
+                          <div className="share-btn share-btn-activation dropdown">
+                            <button
+                              type="button"
+                              id="react-aria385022526-63"
+                              aria-expanded="false"
+                              className="icon p-0 btn btn-link"
+                            >
+                              <svg
+                                viewBox="0 0 14 4"
+                                fill="none"
+                                width="16"
+                                height="16"
+                                className="sc-bdnxRM sc-hKFxyN hOiKLt"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="/">
+                          <span className="product-name">BHD_PROPOSAL@ID</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                      <div className="product-style-{{ne no-overlay">
+                        <div className="card-thumbnail">
+                          <a href="/product">
+                            <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                              <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                                <img
+                                  alt=""
+                                  aria-hidden="true"
+                                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27533%27%20height=%27533%27/%3e"
+                                  style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                                />
+                              </span>
+                              <img
+                                alt="NFT_portfolio"
+                                srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp;w=1080&amp;q=75 2x"
+                                src="/_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp;w=1080&amp;q=75"
+                                decoding="async"
+                                data-nimg="intrinsic"
+                                style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              />
+                            </span>
+                          </a>
+                        </div>
+                        <div className="product-share-wrapper">
+                          <div className="profile-share">
+                            <a href="/" className="more-author-text">
+                              8+ Place Bit.
+                            </a>
+                          </div>
+                          <div className="share-btn share-btn-activation dropdown">
+                            <button
+                              type="button"
+                              id="react-aria385022526-64"
+                              aria-expanded="false"
+                              className="icon p-0 btn btn-link"
+                            >
+                              <svg
+                                viewBox="0 0 14 4"
+                                fill="none"
+                                width="16"
+                                height="16"
+                                className="sc-bdnxRM sc-hKFxyN hOiKLt"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="/">
+                          <span className="product-name">BHD_PROPOSAL@ID</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="rn-service-area rn-section-gapTop">
+            <div className="container">
+              <div className="row">
+                <div className="col-12 mb--50">
+                  <h3
+                    className="title"
+                    data-sal-delay="150"
+                    data-sal="slide-up"
+                    data-sal-duration="800"
+                  >
+                    How to contribute to the Black History Dao
+                  </h3>
+                </div>
+              </div>
+              <div className="row g-5">
+                <div className="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    data-sal="slide-up"
+                    data-sal-delay="150"
+                    data-sal-duration="800"
+                    className="rn-service-one color-shape-7"
+                  >
+                    <div className="inner">
+                      <div className="icon">
+                        <img
+                          src="/images/icons/shape-7.png"
+                          alt="Set up your wallet"
+                        />
+                      </div>
+                      <div className="subtitle">Step-01</div>
+                      <div className="content">
+                        <h4 className="title">
+                          <a href="/connect">Set up your wallet</a>
+                        </h4>
+                        <p className="description">
+                          connect your wallet to get started{" "}
+                        </p>
+                        <a href="/connect" className="read-more-button">
+                          <i className="feather-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <a href="/connect" className="over-link">
+                      <span className="visually-hidden">
+                        Click here to read more
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div className="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    data-sal="slide-up"
+                    data-sal-delay="150"
+                    data-sal-duration="800"
+                    className="rn-service-one color-shape-7"
+                  >
+                    <div className="inner">
+                      <div className="icon">
+                        <img
+                          src="/images/icons/shape-1.png"
+                          alt="Upload your artifact "
+                        />
+                      </div>
+                      <div className="subtitle">Step-02</div>
+                      <div className="content">
+                        <h4 className="title">
+                          <a href="/collection">Upload your artifact </a>
+                        </h4>
+                        <p className="description">
+                          submit your artifacts propose to the Dao for
+                          verfication
+                        </p>
+                        <a href="/collection" className="read-more-button">
+                          <i className="feather-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <a href="/collection" className="over-link">
+                      <span className="visually-hidden">
+                        Click here to read more
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div className="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    data-sal="slide-up"
+                    data-sal-delay="150"
+                    data-sal-duration="800"
+                    className="rn-service-one color-shape-7"
+                  >
+                    <div className="inner">
+                      <div className="icon">
+                        <img
+                          src="/images/icons/shape-5.png"
+                          alt="Review Period"
+                        />
+                      </div>
+                      <div className="subtitle">Step-03</div>
+                      <div className="content">
+                        <h4 className="title">
+                          <a href="/connect">Review Period</a>
+                        </h4>
+                        <p className="description">
+                          Your artifacts will remain on hold while our expert
+                          team of historians verfiy the legitamacy of your
+                          historic artifact
+                        </p>
+                        <a href="/connect" className="read-more-button">
+                          <i className="feather-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <a href="/connect" className="over-link">
+                      <span className="visually-hidden">
+                        Click here to read more
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div className="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div
+                    data-sal="slide-up"
+                    data-sal-delay="150"
+                    data-sal-duration="800"
+                    className="rn-service-one color-shape-7"
+                  >
+                    <div className="inner">
+                      <div className="icon">
+                        <img
+                          src="/images/icons/shape-6.png"
+                          alt="Verified submissions"
+                        />
+                      </div>
+                      <div className="subtitle">Step-04</div>
+                      <div className="content">
+                        <h4 className="title">
+                          <a href="/creator">Verified submissions</a>
+                        </h4>
+                        <p className="description">
+                          When your artifact is reviewed and verfied it will be
+                          submitting onto the Black history Dao archive and the
+                          contributer will recieve points in scale of there
+                          contribution
+                        </p>
+                        <a href="/creator" className="read-more-button">
+                          <i className="feather-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <a href="/creator" className="over-link">
+                      <span className="visually-hidden">
+                        Click here to read more
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="rn-collection-area rn-section-gapTop">
+            <div className="container">
+              <div className="row mb--50 align-items-center">
+                <div className="col-lg-6 col-md-6 col-sm-6 col-12">
+                  <h3
+                    className="title mb--0"
+                    data-sal-delay="150"
+                    data-sal="slide-up"
+                    data-sal-duration="800"
+                  >
+                    Top Historic Collections
+                  </h3>
+                </div>
+                <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--15">
+                  <div
+                    className="view-more-btn text-start text-sm-end"
+                    data-sal-delay="150"
+                    data-sal="slide-up"
+                    data-sal-duration="800"
+                  >
+                    <a href="/collection" className="btn-transparent">
+                      VIEW ALL<i className="feather feather-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="row g-5">
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12"
+                >
+                  <a href="/collection" className="rn-collection-inner-one">
+                    <div className="collection-wrapper">
+                      <div className="collection-big-thumbnail">
+                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27507%27%20height=%27339%27/%3e"
+                              style={{display: block; maxWidth:" 100%" ,width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Nft_Profile"
+                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault.jpg&amp;w=1080&amp;q=75 2x"
+                            src="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault.jpg&amp;w=1080&amp;q=75"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                          />
+                        </span>
+                      </div>
+                      <div className="collenction-small-thumbnail">
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fk49zswc29d.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fk49zswc29d.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fk49zswc29d.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2F05_17.3_1954.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2F05_17.3_1954.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2F05_17.3_1954.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fcollection-sm-03.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fcollection-sm-03.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fcollection-sm-03.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="collection-deg">
+                        <h6 className="title">Separate But Equal</h6>
+                        <span className="items">27 items</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12"
+                >
+                  <a href="/collection" className="rn-collection-inner-one">
+                    <div className="collection-wrapper">
+                      <div className="collection-big-thumbnail">
+                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27507%27%20height=%27339%27/%3e"
+                              style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Nft_Profile"
+                            srcset="/_next/image?url=%2Fimages%2Fcollection%2F3jimc0315m.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2F3jimc0315m.jpg&amp;w=1080&amp;q=75 2x"
+                            src="/_next/image?url=%2Fimages%2Fcollection%2F3jimc0315m.jpg&amp;w=1080&amp;q=75"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                          />
+                        </span>
+                      </div>
+                      <div className="collenction-small-thumbnail">
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault-2.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault-2.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault-2.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fimages-2.jpeg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fimages-2.jpeg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fimages-2.jpeg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="collection-deg">
+                        <h6 className="title">Jim Crow:Equal Opportunity</h6>
+                        <span className="items">20 items</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12"
+                >
+                  <a href="/collection" className="rn-collection-inner-one">
+                    <div className="collection-wrapper">
+                      <div className="collection-big-thumbnail">
+                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27507%27%20height=%27339%27/%3e"
+                              style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Nft_Profile"
+                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm1.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm1.jpg&amp;w=1080&amp;q=75 2x"
+                            src="/_next/image?url=%2Fimages%2Fcollection%2Fblm1.jpg&amp;w=1080&amp;q=75"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                          />
+                        </span>
+                      </div>
+                      <div className="collenction-small-thumbnail">
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm3.jfif&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm3.jfif&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fblm3.jfif&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="collection-deg">
+                        <h6 className="title">Black Lives Matter -06/20</h6>
+                        <span className="items">15 items</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12"
+                >
+                  <a href="/collection" className="rn-collection-inner-one">
+                    <div className="collection-wrapper">
+                      <div className="collection-big-thumbnail">
+                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27507%27%20height=%27339%27/%3e"
+                              style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="Nft_Profile"
+                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=1080&amp;q=75 2x"
+                            src="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=1080&amp;q=75"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                          />
+                        </span>
+                      </div>
+                      <div className="collenction-small-thumbnail">
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill4.jpg&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill4.jpg&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Ftill4.jpg&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                            <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                              <img
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                                style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              />
+                            </span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                        <div>
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%""></span>
+                          style={{boxSizing: "borderBox; display: block; width:
+                          initial; height: initial; background: none; opacity:
+                          1; border: 0px; margin: 0px; padding: 0px; maxWidth:
+                         " 100%""/&gt;
+                          <img
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27164%27%20height=%27110%27/%3e"
+                            style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                          />
+                          <span>
+                            <img
+                              alt="Nft_Profile"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill2.webp&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill2.webp&amp;w=384&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Ftill2.webp&amp;w=384&amp;q=75"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="collection-deg">
+                        <h6 className="title">Emmett Till</h6>
+                        <span className="items">27 items</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="vedio-area rn-section-gapTop">
+            <div className="container">
+              <div className="row mb--40">
+                <div className="title-area text-center">
+                  <h3 className="title mb--15">Perserve History With Us</h3>
+                  <p className="subtitle">BlackHistoryDao</p>
+                </div>
+              </div>
+              <div className="row">
+                <div
+                  className="col-12 position-relative"
+                  style={{color: blue; display: flex; justify-content: center;"
+                >
+                  <button
+                    type="button"
+                    aria-label="Play video"
+                    className="video-play-button btn-large with-animation"
+                  >
+                    <span></span>
+                  </button>
+                  <div className="video-wrapper">
+                    <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                      <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                        <img
+                          alt=""
+                          aria-hidden="true"
+                          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27640%27%20height=%27360%27/%3e"
+                          style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                        />
+                      </span>
+                      <img
+                        alt="Video BG"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        decoding="async"
+                        data-nimg="intrinsic"
+                        style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                      />
+                      <noscript></noscript>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div className="rn-footer-one bg-color--1 rn-section-gap mt--100 mt_md--80 mt_sm--80">
+          <div className="container">
+            <div className="row gx-5">
+              <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div className="widget-content-wrapper">
+                  <div className="footer-left">
+                    <div className="logo-thumbnail logo-custom-css">
+                      <a href="/" className="logo-light">
+                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
+                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                            <img
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27106%27%20height=%2735%27/%3e"
+                              style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                            />
+                          </span>
+                          <img
+                            alt="logo"
+                            srcset="/_next/image?url=%2Fimages%2Flogo%2Flogo-white.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fimages%2Flogo%2Flogo-white.png&amp;w=256&amp;q=75 2x"
+                            src="/_next/image?url=%2Fimages%2Flogo%2Flogo-white.png&amp;w=256&amp;q=75"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                          />
+                        </span>
+                      </a>
+                    </div>
+                    <p className="rn-footer-describe">
+                      Created with the collaboration of over 100 historians and
+                      contributers{" "}
+                    </p>
+                  </div>
+                  <div className="widget-bottom mt--40 pt--40">
+                    <h6 className="title">Get The Latest Updates</h6>
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        className="form-control bg-color--2"
+                        placeholder="Email"
+                        aria-label="Recipient's username"
+                      />
+                      <div className="input-group-append">
+                        <button
+                          className="btn btn-primary-alta btn-outline-secondary"
+                          type="button"
+                        >
+                          Subscribe
+                        </button>
+                      </div>
+                    </div>
+                    <div className="newsletter-dsc">
+                      <p>Email is safe. We don't spam.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_mobile--40">
+                <div className="footer-widget widget-quicklink">
+                  <h6 className="widget-title">Black History Dao</h6>
+                  <ul className="footer-list-one">
+                    <li className="single-list">
+                      <a href="/">Enter the Metaverse</a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/">Visit our dao</a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/">Team Members</a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/">Become a Sponsor</a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/">Join our Newsletter</a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
+                <div className="footer-widget widget-information">
+                  <h6 className="widget-title">Information</h6>
+                  <ul className="footer-list-one">
+                    <li className="single-list">
+                      <a href="/">Contact Us</a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/">Join the Team</a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/">Internships</a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/"></a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/"></a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/"></a>
+                    </li>
+                    <li className="single-list">
+                      <a href="/"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
+                <div className="footer-widget">
+                  <h6 className="widget-title">Recently Sold Out</h6>
+                  <ul className="footer-recent-post">
+                    <li className="recent-post">
+                      <div className="thumbnail">
+                        <a href="/product">
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: 60px; height: 60px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;">
+                            <img
+                              alt="product Images"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2FFlyod%40Protests.webp&amp;w=64&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2FFlyod%40Protests.webp&amp;w=128&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2FFlyod%40Protests.webp&amp;w=128&amp;q=75"
+                              decoding="async"
+                              data-nimg="fixed"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </a>
+                      </div>
+                      <div className="content">
+                        <h6 className="title">
+                          <a href="/product">I CAN'T BREATHE George Floyd</a>
+                        </h6>
+                        <p>Highest bid 1/20</p>
+                        <span className="price">0.244wETH</span>
+                      </div>
+                    </li>
+                    <li className="recent-post">
+                      <div className="thumbnail">
+                        <a href="/product">
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: 60px; height: 60px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;">
+                            <img
+                              alt="product Images"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=64&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=128&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=128&amp;q=75"
+                              decoding="async"
+                              data-nimg="fixed"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </a>
+                      </div>
+                      <div className="content">
+                        <h6 className="title">
+                          <a href="/product">Jim Crow Excerpt</a>
+                        </h6>
+                        <p>Highest bid 1/20</p>
+                        <span className="price">0.022wETH</span>
+                      </div>
+                    </li>
+                    <li className="recent-post">
+                      <div className="thumbnail">
+                        <a href="/product">
+                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: 60px; height: 60px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;">
+                            <img
+                              alt="product Images"
+                              srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=64&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=128&amp;q=75 2x"
+                              src="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=128&amp;q=75"
+                              decoding="async"
+                              data-nimg="fixed"
+                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            />
+                          </span>
+                        </a>
+                      </div>
+                      <div className="content">
+                        <h6 className="title">
+                          <a href="/product">Unrevealed Emmett Till audio</a>
+                        </h6>
+                        <p>Highest bid 1/20</p>
+                        <span className="price">0.892wETH</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="copy-right-one ptb--20 bg-color--1">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12 col-sm-12">
+                <div className="copyright-left">
+                  <span>©2022 Black History DAO. All rights reserved</span>
+                  <ul className="privacy">
+                    <li>
+                      <a href="/terms-condition">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                      <a href="/privacy-policy">Privacy Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 col-sm-12">
+                <div className="copyright-right">
+                  <ul className="social-copyright">
+                    <li>
+                      <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Facebook"
+                      >
+                        <i className="feather-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Twitter"
+                      >
+                        <i className="feather-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Instagram"
+                      >
+                        <i className="feather-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://linkedin.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="linkedin"
+                      >
+                        <i className="feather-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://mail.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="mail"
+                      >
+                        <i className="feather-mail"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rn-progress-parent" role="button" tabindex="-1">
+          <svg
+            className="rn-back-circle svg-inner"
+            width="100%"
+            height="100%"
+            viewBox="-1 -1 102 102"
+          >
+            <path
+              d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+              style={{transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"
+            ></path>
+          </svg>
+        </div>
+        <div className="Toastify"></div>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
