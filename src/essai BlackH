@@ -135,7 +135,6 @@ function BlackHistoryCards() {
                         height: "4vw ",
                         borderRadius: "10px",
                       }}
-                      src={require("./images/thirdJimCrew.jpeg")}
                       alt="img-3"
                     />
                   </Stack>

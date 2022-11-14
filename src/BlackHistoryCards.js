@@ -1,5 +1,8 @@
 import React from "react";
-import "./BlackHistoryCards.css";
+import "./BlackHistoryCards.scss";
+import Contribute from "./Contribute";
+// ES6 modules
+import sal from "sal.js";
 
 const BlackHistoryCards = () => {
   return (
@@ -24,22 +27,10 @@ const BlackHistoryCards = () => {
                   data-sal-duration="800"
                 ></p>
                 <div className="button-group">
-                  <a
-                    href="/"
-                    className="btn btn-large btn-primary sal-animate"
-                    data-sal-delay="400"
-                    data-sal="slide-up"
-                    data-sal-duration="800"
-                  >
+                  <a href="/" className="btn btn-large btn-primary ">
                     <span>Become a verifier</span>
                   </a>
-                  <a
-                    href="/create"
-                    className="btn btn-large btn-primary-alta sal-animate"
-                    data-sal-delay="500"
-                    data-sal="slide-up"
-                    data-sal-duration="800"
-                  >
+                  <a href="/create" className="btn btn-large btn-primary-alta ">
                     <span>Create Proposal</span>
                   </a>
                 </div>
@@ -85,7 +76,8 @@ const BlackHistoryCards = () => {
                           maxWidth: " 100%",
                           width: "initial",
                           height: "initial",
-                          background: "none",
+                          background: "black",
+                          fill: "black",
                           opacity: 1,
                           border: "0px",
                           margin: "0px",
@@ -95,7 +87,8 @@ const BlackHistoryCards = () => {
                     </span>
                     <img
                       alt="Slider Images"
-                      src={require("./images/slider-1.jpeg")}
+                      media="(prefers-color-scheme: dark)"
+                      src={require("./images/slider-3.jpg")}
                       decoding="async"
                       data-nimg="intrinsic"
                       style={{
@@ -106,6 +99,8 @@ const BlackHistoryCards = () => {
                         border: "none",
                         margin: "auto",
                         display: "block",
+                        background: "black",
+                        fill: "black",
                         width: "0px",
                         height: "0px",
                         minWidth: " 100%",
@@ -206,8 +201,8 @@ const BlackHistoryCards = () => {
                         </span>
                         <img
                           alt="Nft_Profile"
-                          srcset="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault.jpg&amp,w=640&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault.jpg&amp,w=1080&amp,q=75 2x"
-                          src="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault.jpg&amp,w=1080&amp,q=75"
+                          className="img-top"
+                          src={require("./images/bigSeparate.webp")}
                           decoding="async"
                           data-nimg="intrinsic"
                           style={{
@@ -279,8 +274,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcSet="/_next/image?url=%2Fimages%2Fcollection%2Fk49zswc29d.jpg&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fk49zswc29d.jpg&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Fk49zswc29d.jpg&amp,w=384&amp,q=75"
+                            src={require("./images/firstSeparate.webp")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -351,8 +345,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcSet="/_next/image?url=%2Fimages%2Fcollection%2F05_17.3_1954.jpg&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2F05_17.3_1954.jpg&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2F05_17.3_1954.jpg&amp,w=384&amp,q=75"
+                            src={require("./images/second-separate.webp")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -422,8 +415,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fcollection-sm-03.jpg&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fcollection-sm-03.jpg&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Fcollection-sm-03.jpg&amp,w=384&amp,q=75"
+                            src={require("./images/third separate.webp")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -510,8 +502,8 @@ const BlackHistoryCards = () => {
                         </span>
                         <img
                           alt="Nft_Profile"
-                          srcset="/_next/image?url=%2Fimages%2Fcollection%2F3jimc0315m.jpg&amp,w=640&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2F3jimc0315m.jpg&amp,w=1080&amp,q=75 2x"
-                          src="/_next/image?url=%2Fimages%2Fcollection%2F3jimc0315m.jpg&amp,w=1080&amp,q=75"
+                          className="img-top"
+                          src={require("./images/bigJimCrow.webp")}
                           decoding="async"
                           data-nimg="intrinsic"
                           style={{
@@ -583,8 +575,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault-2.jpg&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault-2.jpg&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Fmaxresdefault-2.jpg&amp,w=384&amp,q=75"
+                            src={require("./images/firstJimcrow.jpeg")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -655,8 +646,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fimages-2.jpeg&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fimages-2.jpeg&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Fimages-2.jpeg&amp,w=384&amp,q=75"
+                            src={require("./images/secondJimCrow.jpeg")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -727,8 +717,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcset="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp,w=384&amp,q=75"
+                            src={require("./images/thirdJimCrew.jpeg")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -816,8 +805,8 @@ const BlackHistoryCards = () => {
                         </span>
                         <img
                           alt="Nft_Profile"
-                          srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm1.jpg&amp,w=640&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm1.jpg&amp,w=1080&amp,q=75 2x"
-                          src="/_next/image?url=%2Fimages%2Fcollection%2Fblm1.jpg&amp,w=1080&amp,q=75"
+                          className="img-top"
+                          src={require("./images/blacklives.webp")}
                           decoding="async"
                           data-nimg="intrinsic"
                           style={{
@@ -889,8 +878,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Fblm2.jpg&amp,w=384&amp,q=75"
+                            src={require("./images/firstblacklivesMatter.webp")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -961,8 +949,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm3.jfif&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm3.jfif&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Fblm3.jfif&amp,w=384&amp,q=75"
+                            src={require("./images/secondBlackLivesMatter.webp")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -1033,8 +1020,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Fblm4.jpg&amp,w=384&amp,q=75"
+                            src={require("./images/thirdblacklivesMatter.webp")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -1121,8 +1107,8 @@ const BlackHistoryCards = () => {
                         </span>
                         <img
                           alt="Nft_Profile"
-                          srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp,w=640&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp,w=1080&amp,q=75 2x"
-                          src="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp,w=1080&amp,q=75"
+                          className="img-top"
+                          src={require("./images/till1.webp")}
                           decoding="async"
                           data-nimg="intrinsic"
                           style={{
@@ -1194,8 +1180,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill4.jpg&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill4.jpg&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Ftill4.jpg&amp,w=384&amp,q=75"
+                            src={require("./images/till2.webp")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -1266,8 +1251,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Ftill3.webp&amp,w=384&amp,q=75"
+                            src={require("./images/till3.webp")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -1338,8 +1322,7 @@ const BlackHistoryCards = () => {
                           </span>
                           <img
                             alt="Nft_Profile"
-                            srcSet="/_next/image?url=%2Fimages%2Fcollection%2Ftill2.webp&amp,w=256&amp,q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill2.webp&amp,w=384&amp,q=75 2x"
-                            src="/_next/image?url=%2Fimages%2Fcollection%2Ftill2.webp&amp,w=384&amp,q=75"
+                            src={require("./images/till4.webp")}
                             decoding="async"
                             data-nimg="intrinsic"
                             style={{
@@ -1371,9 +1354,11 @@ const BlackHistoryCards = () => {
             </div>
           </div>
         </div>
+        <Contribute />
       </main>
     </div>
   );
 };
 
 export default BlackHistoryCards;
+sal();

@@ -1,5 +1,5 @@
 
-* {
+#__next {
 
     box-sizing: border-box;
 
@@ -49,25 +49,39 @@
 }
 
 
-.rn-header.header--sticky {
-  position: sticky!important;
+.rn-header.header--fixed.sticky {
+ 
+ 
+  position: fixed !important;
   top: 0;
-  z-index: 999;
-  width: 100%;
-  -webkit-backdrop-filter: blur(9px);
+ 
+  display: block;
   backdrop-filter: blur(9px);
-  border-bottom: 1px solid hsla(0,0%,100%,.078);
-  
+ 
     font-size: 14px;
     line-height: 1,5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+   
     font-family: "Roboto" , sans-serif;
     color: #acacac;
     font-weight: 400;
-    position: relative;
+   
 
 
+}
+
+
+
+
+.rn-header.header--sticky {
+ 
+  z-index: 999;
+  width: 100%;
+}
+
+.rn-header.header--fixed {
+  
+  transition: .3s;
+  border-bottom: 1px solid hsla(0,0%,100%,.078);
 }
 button {
   background: transparent;
@@ -185,7 +199,7 @@ ul {
 
 li {
   display: list-item;
-  text-align: -webkit-match-parent;
+  text-align: "-webkit-match-parent";
 }
 
 .mainmenu-nav .mainmenu li a {
@@ -211,7 +225,7 @@ li {
 }
 
 [class*=" feather-"], [class^=feather-] {
-  font-family: feather!important;
+  font-family: "feather" !important;
   
   font-style: normal;
   font-weight: 400;
@@ -233,13 +247,13 @@ li {
  .icon-box>button {
   width: 40px;
   height: 40px;
-  border: 1px solid var(--color-border);
+  border: 1px solid  #ffffff14;
   text-align: center;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-body);
+  color: #acacac;
   position: relative;
   z-index: 2;
 }
@@ -327,7 +341,7 @@ a.btn, button.btn {
 }
 input {
 width: 250px;
-appearance: textfield;
+appearance: "textfield";
 outline-offset: -2px;
 height: 40px;
 border: 1px solid #ffffff14;;

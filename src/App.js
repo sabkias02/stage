@@ -1,6 +1,6 @@
 import React from "react";
 import BlackHistoryCards from "./BlackHistoryCards";
-
+import sal from "sal.js";
 import Navbar from "./Headers/Navbar";
 
 function App() {

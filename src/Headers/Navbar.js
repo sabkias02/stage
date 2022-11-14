@@ -1,6 +1,6 @@
 import React from "react";
-import { search } from "react-feather";
-import "./Navbar.css";
+
+import "./Navbar.scss";
 
 const Navbar = () => {
   return (
