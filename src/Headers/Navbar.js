@@ -237,7 +237,7 @@ const Navbar = () => {
             </div>
           </div>
         </header>
-        <div className="popup-mobile-menu" role="button" tabindex="0">
+        {/*<div className="popup-mobile-menu" role="button" tabindex="0">
           <div className="inner" role="button" tabindex="0">
             <div className="header-top">
               <div className="logo-thumbnail logo-custom-css">
@@ -407,7 +407,7 @@ const Navbar = () => {
               </nav>
             </div>
           </div>
-        </div>
+                    </div*/}
       </div>
     </div>
   );

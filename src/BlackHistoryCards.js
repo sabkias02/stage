@@ -1,6 +1,8 @@
 import React from "react";
 import "./BlackHistoryCards.scss";
 import Contribute from "./Contribute";
+import HowToContribute from "./HowToContribute";
+
 // ES6 modules
 import sal from "sal.js";
 

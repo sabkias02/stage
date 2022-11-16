@@ -8,11 +8,7 @@
 
 
 
-.row .g-5{
 
-
-    
-}
 
 .row {
     --bs-gutter-x: 1.5rem;
@@ -187,13 +183,21 @@ input[type=radio]~label:after {
     background: #fff;
     border-radius: 50%;
 }
-input[type=checkbox]~label:after, input[type=radio]~label:after {
+
+
+input[type=checkbox]:checked~label:after, input[type=radio]:checked~label:after {
     content: " ";
     position: absolute;
+    top: 16%;
+    left: 2px;
+    width: 10px;
+    height: 6px;
+    background-color: transparent;
     border-bottom: 2px solid #fff;
     border-left: 2px solid #fff;
+    border-radius: 2px;
     transform: rotate(-45deg);
-    
+    opacity: 0;
     transition: all .3s;
 }
 
@@ -268,6 +272,10 @@ input[type=checkbox]~label:after, input[type=radio]~label:after {
     color: #acacac;
     display: inline-block;
     padding-left: 7px;
+}
+.product-share-wrapper .profile-share a.more-author-text:hover {
+    color: #0398ed;
+   
 }
 .product-share-wrapper .profile-share a {
     position: relative;
@@ -445,3 +453,59 @@ a, a:active, a:focus, a:hover {
     color: #00a3ff;
     
   }
+
+  .nuron-expo-filter-widget .content .nuron-form-check label svg {
+    margin-right: 4px;
+    color: #dd8f1d;
+}
+
+.nuron-expo-filter-widget .content .nuron-form-check label svg.off {
+    color: #5d5d7e;
+}
+
+.nuron-expo-filter-widget .slider__range--output {
+    margin-top: 8px;
+}
+.input-range .slider-track-container {
+    height: 4px;
+    border-radius: 5px;
+}
+
+.input-range .slider-thumb {
+    width: 10px;
+    height: 10px;
+    background: #00a3ff;
+    border-radius: 50%;
+    margin-top: -3px;
+    transition: left .3s ease-out,width .3s ease-out;
+}
+
+.rn-service-one .inner .icon img {
+    max-height: 85px!important;
+}
+.rn-service-one {
+    text-align: left;
+
+}
+
+.rn-service-one .inner>* {
+    transition: .7s cubic-bezier(.17,.67,0,1.01);
+    transform: translateY(10px);
+}
+
+h3.title .sal-animate{
+    font-weight:700;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Roboto",sans-serif;
+    color: #fff;
+   
+}
+.h3, h3 {
+    font-size: 32px;
+    
+    
+}
+
