@@ -4,6 +4,11 @@ import "./Navbar.scss";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  });
+
   return (
     <div>
       <div id="__next" data-reactroot="">
