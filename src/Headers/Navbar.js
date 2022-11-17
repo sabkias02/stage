@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -158,14 +159,18 @@ const Navbar = () => {
                   <nav id="sideNav" className="mainmenu-nav d-none d-xl-block">
                     <ul className="mainmenu">
                       <li className="">
-                        <a href="/" className="its_new">
+                        <Link to="/" className="its_new">
                           Home
-                        </a>
+                        </Link>
                       </li>
                       <li className="">
-                        <a href="/" className="its_new">
+                        <Link
+                          to="/Create
+                        "
+                          className="its_new"
+                        >
                           Create Proposal
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>

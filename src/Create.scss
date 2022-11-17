@@ -1,0 +1,54 @@
+
+
+.container-fluid {
+
+margin: 20px;
+
+}
+
+.upload-area{
+
+max-width:350px;
+max-height:1000px;
+
+}
+
+ 
+  .btn-space {
+    margin-right: 20px;
+}
+
+
+.rn-breadcrumb-inner {
+  border-bottom: 1px solid #ffffff14;
+}
+.ptb--30 {
+  padding: 30px 0!important;
+}
+
+.container1 {
+  padding: 2px 16px;
+}
+
+.main {
+  box-sizing: border-box;
+  background-color: black;
+  background-image:  ("./images/noise.gif");
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+.main {
+  display: block;
+
+  font-size: 14px;
+    line-height: 1,5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto",sans-serif;
+    color: #acacac;
+    font-weight: 400;
+    position: relative;
+}
+

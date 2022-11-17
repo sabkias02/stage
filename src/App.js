@@ -1,20 +1,23 @@
 import React from "react";
-import BlackHistoryCards from "./BlackHistoryCards";
 
+import Home from "./Home";
+import Create from "./Create";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Headers/Navbar";
 import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <BlackHistoryCards />
-      {/*<Routes>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/Home" element={<Home />} />
-          <Route exact path="/create" element={<Create />} />
-        </Routes>*/}
-    </div>
+          <Route exact path="/Create" element={<Create />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

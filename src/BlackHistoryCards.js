@@ -1,8 +1,8 @@
 import React from "react";
 import "./BlackHistoryCards.scss";
 import Contribute from "./Contribute";
-import HowToContribute from "./HowToContribute";
-
+import { Link } from "react-router-dom";
+import * as Icon from "react-feather";
 // ES6 modules
 import sal from "sal.js";
 
@@ -29,12 +29,15 @@ const BlackHistoryCards = () => {
                   data-sal-duration="800"
                 ></p>
                 <div className="button-group">
-                  <a href="/" className="btn btn-large btn-primary ">
+                  <Link to="/" className="btn btn-large btn-primary ">
                     <span>Become a verifier</span>
-                  </a>
-                  <a href="/create" className="btn btn-large btn-primary-alta ">
+                  </Link>
+                  <Link
+                    to="/Create"
+                    className="btn btn-large btn-primary-alta "
+                  >
                     <span>Create Proposal</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
@@ -139,7 +142,7 @@ const BlackHistoryCards = () => {
                 >
                   <a href="/collection" className="btn-transparent">
                     VIEW ALL
-                    <i className="feather feather-arrow-right"></i>
+                    <Icon.ArrowRight />
                   </a>
                 </div>
               </div>

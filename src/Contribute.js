@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
 import "./Contribute.scss";
 import sal from "sal.js";
+import * as Icon from "react-feather";
 
 function Contribute() {
   return (
@@ -25,7 +25,7 @@ function Contribute() {
                           value="newest"
                           checked=""
                         />
-                        <label for="short-check1">Newest</label>
+                        <label htmlFor="short-check1">Newest</label>
                       </div>
                       <div className="nuron-form-check">
                         <input
@@ -34,7 +34,7 @@ function Contribute() {
                           id="short-check2"
                           value="oldest"
                         />
-                        <label for="short-check2">Oldest</label>
+                        <label htmlFor="short-check2">Oldest</label>
                       </div>
                       <div className="nuron-form-check">
                         <input
@@ -43,7 +43,7 @@ function Contribute() {
                           id="short-check3"
                           value="most-liked"
                         />
-                        <label for="short-check3">Most Liked</label>
+                        <label htmlFor="short-check3">Most Liked</label>
                       </div>
                       <div className="nuron-form-check">
                         <input
@@ -52,7 +52,7 @@ function Contribute() {
                           id="short-check4"
                           value="least-liked"
                         />
-                        <label for="short-check4">Least Liked</label>
+                        <label htmlFor="short-check4">Least Liked</label>
                       </div>
                     </div>
                   </div>
@@ -69,7 +69,7 @@ function Contribute() {
                           value="2000's"
                         />
                         <label
-                          for="cat-check-2000's"
+                          htmlFor="cat-check-2000's"
                           className="text-capitalize"
                         >
                           2000's <span>(4)</span>
@@ -83,7 +83,7 @@ function Contribute() {
                           value="1800's"
                         />
                         <label
-                          for="cat-check-1800's"
+                          htmlFor="cat-check-1800's"
                           className="text-capitalize"
                         >
                           1800's <span>(1)</span>
@@ -97,7 +97,7 @@ function Contribute() {
                           value="1900's"
                         />
                         <label
-                          for="cat-check-1900's"
+                          htmlFor="cat-check-1900's"
                           className="text-capitalize"
                         >
                           1900's <span>(1)</span>
@@ -111,7 +111,7 @@ function Contribute() {
                           value="1600's"
                         />
                         <label
-                          for="cat-check-1600's"
+                          htmlFor="cat-check-1600's"
                           className="text-capitalize"
                         >
                           1600's <span>(1)</span>
@@ -125,7 +125,7 @@ function Contribute() {
                           value="1700's"
                         />
                         <label
-                          for="cat-check-1700's"
+                          htmlFor="cat-check-1700's"
                           className="text-capitalize"
                         >
                           1700's <span>(1)</span>
@@ -145,7 +145,7 @@ function Contribute() {
                           id="level-check1"
                           value="all"
                         />
-                        <label for="level-check1">All Eras</label>
+                        <label htmlFor="level-check1">All Eras</label>
                       </div>
                       <div className="nuron-form-check">
                         <input
@@ -154,7 +154,7 @@ function Contribute() {
                           id="level-check-Pre Jim Crow"
                           value="Pre Jim Crow"
                         />
-                        <label for="level-check-Pre Jim Crow">
+                        <label htmlFor="level-check-Pre Jim Crow">
                           Pre Jim Crow
                         </label>
                       </div>
@@ -165,7 +165,7 @@ function Contribute() {
                           id="level-check-Civil rights movement"
                           value="Civil rights movement"
                         />
-                        <label for="level-check-Civil rights movement">
+                        <label htmlFor="level-check-Civil rights movement">
                           Civil rights movement
                         </label>
                       </div>
@@ -176,7 +176,7 @@ function Contribute() {
                           id="level-check-Jim Crow"
                           value="Jim Crow"
                         />
-                        <label for="level-check-Jim Crow">Jim Crow</label>
+                        <label htmlFor="level-check-Jim Crow">Jim Crow</label>
                       </div>
                       <div className="nuron-form-check">
                         <input
@@ -185,7 +185,7 @@ function Contribute() {
                           id="level-check-Black Lives Matter"
                           value="Black Lives Matter"
                         />
-                        <label for="level-check-Black Lives Matter">
+                        <label htmlFor="level-check-Black Lives Matter">
                           Black Lives Matter
                         </label>
                       </div>
@@ -196,7 +196,7 @@ function Contribute() {
                           id="level-check-Abolitionism"
                           value="Abolitionism"
                         />
-                        <label for="level-check-Abolitionism">
+                        <label htmlFor="level-check-Abolitionism">
                           Abolitionism
                         </label>
                       </div>
@@ -214,7 +214,7 @@ function Contribute() {
                           id="price-check1"
                           value="low-to-high"
                         />
-                        <label for="price-check1">Price: Low to High</label>
+                        <label htmlFor="price-check1">Price: Low to High</label>
                       </div>
                       <div className="nuron-form-check">
                         <input
@@ -223,7 +223,7 @@ function Contribute() {
                           id="price-check2"
                           value="high-to-low"
                         />
-                        <label for="price-check2">Price: High to Low</label>
+                        <label htmlFor="price-check2">Price: High to Low</label>
                       </div>
                     </div>
                   </div>
@@ -239,7 +239,7 @@ function Contribute() {
                           id="lang-check1"
                           value="all"
                         />
-                        <label for="lang-check1">All Language</label>
+                        <label htmlFor="lang-check1">All Language</label>
                       </div>
                       <div className="nuron-form-check">
                         <input
@@ -248,7 +248,7 @@ function Contribute() {
                           id="lang-check-Russian"
                           value="Russian"
                         />
-                        <label for="lang-check-Russian">Russian</label>
+                        <label htmlFor="lang-check-Russian">Russian</label>
                       </div>
                       <div className="nuron-form-check">
                         <input
@@ -257,7 +257,7 @@ function Contribute() {
                           id="lang-check-Arabic"
                           value="Arabic"
                         />
-                        <label for="lang-check-Arabic">Arabic</label>
+                        <label htmlFor="lang-check-Arabic">Arabic</label>
                       </div>
                       <div className="nuron-form-check">
                         <input
@@ -266,7 +266,7 @@ function Contribute() {
                           id="lang-check-English"
                           value="English"
                         />
-                        <label for="lang-check-English">English</label>
+                        <label htmlFor="lang-check-English">English</label>
                       </div>
                     </div>
                   </div>
@@ -282,7 +282,7 @@ function Contribute() {
                           id="rating-check1"
                           value="5"
                         />
-                        <label for="rating-check1">
+                        <label htmlFor="rating-check1">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -342,7 +342,7 @@ function Contribute() {
                           id="rating-check2"
                           value="4"
                         />
-                        <label for="rating-check2">
+                        <label htmlFor="rating-check2">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -402,7 +402,7 @@ function Contribute() {
                           id="rating-check3"
                           value="3"
                         />
-                        <label for="rating-check3">
+                        <label htmlFor="rating-check3">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -462,7 +462,7 @@ function Contribute() {
                           id="rating-check4"
                           value="2"
                         />
-                        <label for="rating-check4">
+                        <label htmlFor="rating-check4">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -522,7 +522,7 @@ function Contribute() {
                           id="rating-check5"
                           value="1"
                         />
-                        <label for="rating-check5">
+                        <label htmlFor="rating-check5">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -766,7 +766,7 @@ function Contribute() {
                             className="sc-bdnxRM sc-hKFxyN hOiKLt"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               clip-rule="evenodd"
                               d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
                               fill="currentColor"
@@ -877,7 +877,7 @@ function Contribute() {
                             className="sc-bdnxRM sc-hKFxyN hOiKLt"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               clip-rule="evenodd"
                               d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
                               fill="currentColor"
@@ -988,7 +988,7 @@ function Contribute() {
                             className="sc-bdnxRM sc-hKFxyN hOiKLt"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               clip-rule="evenodd"
                               d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
                               fill="currentColor"
@@ -1099,7 +1099,7 @@ function Contribute() {
                             className="sc-bdnxRM sc-hKFxyN hOiKLt"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               clip-rule="evenodd"
                               d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
                               fill="currentColor"
@@ -1210,7 +1210,7 @@ function Contribute() {
                             className="sc-bdnxRM sc-hKFxyN hOiKLt"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               clip-rule="evenodd"
                               d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
                               fill="currentColor"
@@ -1321,7 +1321,7 @@ function Contribute() {
                             className="sc-bdnxRM sc-hKFxyN hOiKLt"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               clip-rule="evenodd"
                               d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
                               fill="currentColor"
@@ -1432,7 +1432,7 @@ function Contribute() {
                             className="sc-bdnxRM sc-hKFxyN hOiKLt"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               clip-rule="evenodd"
                               d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
                               fill="currentColor"
@@ -1544,7 +1544,7 @@ function Contribute() {
                             className="sc-bdnxRM sc-hKFxyN hOiKLt"
                           >
                             <path
-                              fill-rule="evenodd"
+                              fillRule="evenodd"
                               clip-rule="evenodd"
                               d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z"
                               fill="currentColor"
@@ -1751,7 +1751,7 @@ function Contribute() {
               >
                 <a href="/collection" className="btn-transparent">
                   VIEW ALL
-                  <i className="feather feather-arrow-right"></i>
+                  <Icon.ArrowRight />
                 </a>
               </div>
             </div>

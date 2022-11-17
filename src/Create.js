@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import "./Create.css";
+import "./Create.scss";
 import "mdbreact/dist/css/mdb.css";
 import { MDBFile } from "mdb-react-ui-kit";
 import Box from "@mui/material/Box";
 import * as Icon from "react-feather";
+import { Link } from "react-router-dom";
 
 class Create extends Component {
   state = {
@@ -30,25 +31,25 @@ class Create extends Component {
       borderRadius: "10px",
     };
     return (
-      <div>
-        <div class="rn-breadcrumb-inner ptb--30">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-md-6 col-12">
-                <h4 class="pageTitle text-center text-md-start">
+      <div className="main">
+        <div className="rn-breadcrumb-inner ptb--30">
+          <div className="container1">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-6 col-12">
+                <h4 cclassName="pageTitle text-center text-md-start">
                   Create New Proposal
                 </h4>
               </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <ul class="breadcrumb-list">
-                  <li class="item">
-                    <a href="/">Home</a>
+              <div className="col-lg-6 col-md-6 col-12">
+                <ul className="breadcrumb-list">
+                  <li className="item">
+                    <Link to="/">Home</Link>
                   </li>
 
-                  <li class="separator">
-                    <i class="Icon.feather-chevron-right"></i>
+                  <li className="separator">
+                    <Icon.ChevronRight />
                   </li>
-                  <li class="item current">Create New Proposal</li>
+                  <li className="item current">Create New Proposal</li>
                 </ul>
               </div>
             </div>
@@ -72,7 +73,7 @@ class Create extends Component {
                       style={myStyle}
                       id="name"
                       rows="1"
-                      cols="40"
+                      cols="30"
                       placeholder="Your Name"
                       name="name"
                     ></textarea>
@@ -87,9 +88,9 @@ class Create extends Component {
                     </label>
                     <textarea
                       style={myStyle}
-                      id="name"
+                      id="email"
                       rows="1"
-                      cols="40"
+                      cols="30"
                       placeholder="Your Email"
                       name="email"
                     ></textarea>
@@ -134,6 +135,7 @@ class Create extends Component {
                   className="upload"
                   style={{ color: "red", fontWeight: "Bold", fontSize: "20px" }}
                 >
+                  <Icon.Upload />
                   <MDBFile label="Choose a Cover/NFT" id="customFile" />
                 </div>
                 <span>PNG, GIF, WEBP, MP4 or MP3. Max 1Gb</span>

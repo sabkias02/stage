@@ -11,13 +11,13 @@ const footer = () => {
                   <div className="footer-left">
                     <div className="logo-thumbnail logo-custom-css">
                       <a href="/" className="logo-light">
-                        <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; maxWidth:" 100%"">
-                          <span style={{boxSizing: "borderBox; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; maxWidth:" 100%"">
+                        <span style={{boxSizing: "borderBox", display: "inline-block", overflow:" hidden", width: "initial", height: "initial", background: "none", opacity: 1, border:" 0px", margin: "0px", padding: "0px", position: "relative", maxWidth:" 100%"}}>
+                          <span style={{boxSizing: "borderBox", display: "block", width: "initial", height: "initial", background: "none", opacity: 1, border:" 0px", margin: "0px", padding: "0px", maxWidth:" 100%"}}>
                             <img
                               alt=""
                               aria-hidden="true"
                               src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27106%27%20height=%2735%27/%3e"
-                              style={{display: block; maxWidth:" 100%" width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                              style={{display: "block", maxWidth:" 100%", width: "initial", height: "initial", background: "none", opacity: 1, border:" 0px", margin: "0px", padding: "0px"}}
                             />
                           </span>
                           <img
@@ -26,7 +26,7 @@ const footer = () => {
                             src="/_next/image?url=%2Fimages%2Flogo%2Flogo-white.png&amp;w=256&amp;q=75"
                             decoding="async"
                             data-nimg="intrinsic"
-                            style={{position: "absolute", ; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                            style={{position: "absolute",  boxSizing: "borderBox", padding: "0px", border: "none", margin: "auto", display: "block", width: "0px", height:" 0px",minWidth :" 100%", maxWidth:" 100%" ,minHeight:" 100%" ,maxHeight:" 100%"}}
                           />
                         </span>
                       </a>
@@ -113,21 +113,21 @@ const footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
+              <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40        mt_sm--40">
                 <div className="footer-widget">
                   <h6 className="widget-title">Recently Sold Out</h6>
                   <ul className="footer-recent-post">
                     <li className="recent-post">
                       <div className="thumbnail">
                         <a href="/product">
-                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: 60px; height: 60px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;">
+                          <span style={{boxSizing: "borderBox", display: "inline-block", overflow:" hidden", width: "60px", height: "60px", background: "none", opacity: 1, border:" 0px", margin: "0px", padding: "0px", position: "relative"}}>
                             <img
                               alt="product Images"
                               srcset="/_next/image?url=%2Fimages%2Fcollection%2FFlyod%40Protests.webp&amp;w=64&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2FFlyod%40Protests.webp&amp;w=128&amp;q=75 2x"
                               src="/_next/image?url=%2Fimages%2Fcollection%2FFlyod%40Protests.webp&amp;w=128&amp;q=75"
                               decoding="async"
                               data-nimg="fixed"
-                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              style={{position: "absolute", inset: "0px", boxSizing: "borderBox", padding: "0px", border: "none", margin: "auto", display: "block", width: "0px", height:" 0px",minWidth :" 100%", maxWidth:" 100%",minHeight:" 100%" ,maxHeight:" 100%"}}
                             />
                           </span>
                         </a>
@@ -143,14 +143,13 @@ const footer = () => {
                     <li className="recent-post">
                       <div className="thumbnail">
                         <a href="/product">
-                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: 60px; height: 60px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;">
+                          <span style={{boxSizing: "borderBox", display: "inline-block", overflow:" hidden", width: "60px", height: "60px", background: "none", opacity: 1, border:" 0px", margin: "0px", padding: "0px", position: "relative"}}/>
                             <img
                               alt="product Images"
-                              srcset="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=64&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=128&amp;q=75 2x"
                               src="/_next/image?url=%2Fimages%2Fcollection%2FDde1vxiV0AEQfOV.jpg&amp;w=128&amp;q=75"
                               decoding="async"
                               data-nimg="fixed"
-                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              style={{position: "absolute", inset: "0px", boxSizing: "borderBox", padding: "0px", border: "none", margin: "auto", display: "block", width: "0px", height:" 0px",minWidth :" 100%", maxWidth:" 100%", minHeight:" 100%" ,maxHeight:" 100%"}}
                             />
                           </span>
                         </a>
@@ -166,14 +165,14 @@ const footer = () => {
                     <li className="recent-post">
                       <div className="thumbnail">
                         <a href="/product">
-                          <span style={{boxSizing: "borderBox; display: inline-block; overflow: hidden; width: 60px; height: 60px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;">
+                          <span style={{boxSizing: "borderBox", display: "inline-block", overflow:" hidden", width: "60px", height: "60px", background: "none", opacity: 1, border:" 0px", margin: "0px", padding: "0px", position: "relative"}}/>
                             <img
                               alt="product Images"
                               srcset="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=64&amp;q=75 1x, /_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=128&amp;q=75 2x"
                               src="/_next/image?url=%2Fimages%2Fcollection%2Ftill1.jpg&amp;w=128&amp;q=75"
                               decoding="async"
                               data-nimg="fixed"
-                              style={{position: "absolute", inset: 0px; boxSizing: "borderBox; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; :" 100%" maxWidth:" 100%" minHeight:" 100%" maxHeight:" 100%""
+                              style={{position: "absolute", inset: "0px", boxSizing: "borderBox", padding: "0px", border: "none", margin: "auto", display: "block", width: "0px", height:" 0px",minWidth :" 100%" ,maxWidth:" 100%" ,minHeight:" 100%", maxHeight:" 100%"}}
                             />
                           </span>
                         </a>
@@ -276,7 +275,7 @@ const footer = () => {
           >
             <path
               d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-              style={{transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"
+              style={{transition: "stroke-dashoffset 10ms linear 0s", stroke-dasharray: "307.919, 307.919",stroke-dashoffset: "307.919"}}
             ></path>
           </svg>
         </div>

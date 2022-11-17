@@ -1,82 +1,89 @@
 import React from "react";
+import * as Icon from "react-feather";
 
 const createNewProposal = () => {
   return (
-    <div>
+    <div className="create">
       <main id="main-content">
-        <div class="rn-breadcrumb-inner ptb--30">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-md-6 col-12">
-                <h5 class="pageTitle text-center text-md-start">
+        <div className="rn-breadcrumb-inner ptb--30">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-6 col-12">
+                <h5 className="pageTitle text-center text-md-start">
                   Create New Proposal
                 </h5>
               </div>
-              <div class="col-lg-6 col-md-6 col-12">
-                <ul class="breadcrumb-list">
-                  <li class="item">
+              <div className="col-lg-6 col-md-6 col-12">
+                <ul className="breadcrumb-list">
+                  <li className="item">
                     <a href="/">Home</a>
                   </li>
-                  <li class="separator">
-                    <i class="feather-chevron-right"></i>
+                  <li className="separator">
+                    <Icon.ChevronRight />
                   </li>
-                  <li class="item current">Create New Proposal</li>
+                  <li className="item current">Create New Proposal</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="create-area rn-section-gapTop" style="color: black;">
+        <div
+          className="create-area rn-section-gapTop"
+          style={{ color: "black" }}
+        >
           <form action="#">
-            <div class="container">
-              <div class="row g-5" style="color: red;">
-                <div class="col-lg-3 offset-1 ml_md--0 ml_sm--0">
-                  <div class="upload-area">
-                    <div class="upload-formate mb--20">
-                      <h6 class="title">Upload Asset file</h6>
-                      <p class="formate">Drag or choose a file to upload</p>
+            <div className="container">
+              <div className="row g-5" style={{ color: "red" }}>
+                <div className="col-lg-3 offset-1 ml_md--0 ml_sm--0">
+                  <div className="upload-area">
+                    <div className="upload-formate mb--20">
+                      <h6 className="title">Upload Asset file</h6>
+                      <p className="formate">Drag or choose a file to upload</p>
                     </div>
-                    <div class="brows-file-wrapper">
+                    <div className="brows-file-wrapper">
                       <input
                         name="file"
                         id="file"
                         type="file"
-                        class="inputfile"
+                        className="inputfile"
                         data-multiple-caption="{count} files selected"
                         multiple=""
                       />
-                      <label for="file" title="No File Choosen">
-                        <i class="feather-upload"></i>
-                        <span class="text-center">Choose a Cover/NFT</span>
-                        <p class="text-center mt--10">
+                      <label htmlFor="file" title="No File Choosen">
+                        <Icon.Upload />
+                        <span className="text-center">Choose a Cover/NFT</span>
+                        <p className="text-center mt--10">
                           PNG, GIF, WEBP, MP4 or MP3. <br /> Max 1Gb.
                         </p>
                       </label>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-7" style="background: none; color: yellow;">
+                <div
+                  className="col-lg-7"
+                  style={{ background: "none", color: "yellow" }}
+                >
                   <div
-                    class="form-wrapper-one"
-                    style="background: black; color: yellow;"
+                    className="form-wrapper-one"
+                    style={{ background: "black", color: "yellow" }}
                   >
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="input-box pb--20">
-                          <label for="name" class="form-label">
+                    <div className="row">
+                      <div className="col-md-12">
+                        <div className="input-box pb--20">
+                          <label htmlFor="name" className="form-label">
                             Title
                           </label>
                           <input
                             id="name"
                             placeholder="Format: `Name_Date_Historian-Initials.Org`"
                             name="Title"
-                            style="background: white; color: black;"
+                            style={{ background: "white", color: "black" }}
                           />
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="input-box pb--20">
-                          <label for="Discription" class="form-label">
+                      <div className="col-md-12">
+                        <div className="input-box pb--20">
+                          <label htmlFor="Discription" className="form-label">
                             Description
                           </label>
                           <textarea
@@ -87,10 +94,10 @@ const createNewProposal = () => {
                           ></textarea>
                         </div>
                       </div>
-                      <div class="col-md-12 col-xl-4">
-                        <div class="input-box">
+                      <div className="col-md-12 col-xl-4">
+                        <div className="input-box">
                           <button
-                            class="btn btn-large btn-primary-alta w-100 d-block"
+                            className="btn btn-large btn-primary-alta w-100 d-block"
                             type="submit"
                             data-btn="preview"
                           >
@@ -98,10 +105,10 @@ const createNewProposal = () => {
                           </button>
                         </div>
                       </div>
-                      <div class="col-md-12 col-xl-8 mt_lg--15 mt_md--15 mt_sm--15">
-                        <div class="input-box">
+                      <div className="col-md-12 col-xl-8 mt_lg--15 mt_md--15 mt_sm--15">
+                        <div className="input-box">
                           <button
-                            class="btn btn-large btn-primary w-100 d-block"
+                            className="btn btn-large btn-primary w-100 d-block"
                             type="submit"
                           >
                             <span>Make Proposal</span>
@@ -111,7 +118,7 @@ const createNewProposal = () => {
                     </div>
                   </div>
                 </div>
-                <div class="mt--100 mt_sm--30 mt_md--30 d-block d-lg-none">
+                <div className="mt--100 mt_sm--30 mt_md--30 d-block d-lg-none">
                   <h5> Note: </h5>
                   <span>
                     {" "}
