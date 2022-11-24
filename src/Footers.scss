@@ -21,13 +21,7 @@
     display: block;
     line-height: .8;
 }
-a {
-    transition: 0.4s;
-}
-a, a:active, a:focus, a:hover {
-    text-decoration: none;
-    outline: none;
-}
+
 
 .rn-footer-one .footer-left .rn-footer-describe {
     font-size: 18px;
@@ -73,12 +67,13 @@ h6.widget-title{
     font-size: 24px;
     color:white;
     font-family: "Roboto", sans-serif;
-
+     
     margin-block-start: 2.33em;
     margin-block-end: 2.33em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     line-height: 1.25;
+    padding-left: 40px;
     word-break: break-word;
     font-weight: 700;
     
@@ -214,19 +209,24 @@ ul.social-copyright{
     padding: 0;
 }
 
-Icon.Facebook, Icon.Twitter,Icon.Linkedin,Icon.Email,Icon.Instagram{
-    
-    font-style: normal;
-    font-weight: 400;
-    font-feature-settings: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.copy-right-one .copyright-right .social-copyright li a {
+    color: #acacac;
+    transition: .4s;
+    background: #242435;
+    display: inline-block;
     width: 40px;
     height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+
+.copy-right-one .copyright-right .social-copyright li a:hover {
     color: #acacac;
+   
+    background:#00a3ff;
+   
 }
 .input-group {
     position: relative;
@@ -246,8 +246,8 @@ button.btn.btn-primary-alta.btn-outline-secondary{
 }
 .btn-outline-secondary {
    
-    background-color: transparent !important;
-    background: #212e48;
+    
+    background: #212e48 !important;;
     color: #fff;
     position: relative;
     z-index: 2;
@@ -292,20 +292,25 @@ li {
     text-align: -webkit-match-parent;
 }
 
-.footer-recent-post li.recent-post .content .title {
+h6.title a {
     font-size: 14px;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     font-weight: 700;
     line-height: 1.25;
     font-family: "Roboto",sans-serif;
     color: #fff;
 }
 
+h6.title a:hover {
+    
+    color:#00a3ff;
+}
+
 .footer-recent-post li.recent-post .content p {
     margin-bottom: 3px;
     font-size: 13px;
     color: #acacac;
-    margin: 0 0 40px;
+    margin: 0 0 3px;
     font-weight: 400;
 
 }
@@ -318,4 +323,28 @@ li {
     margin-bottom: 10px;
 }
 
- 
+li.recent-post {
+    border-top: 1px solid #24243557;
+    padding: 10px 0px;
+}
+
+.footer-recent-post li.recent-post .thumbnail {
+    margin-right: 12px;
+}
+
+div.footer-widget {
+    display: block;
+}
+
+.copy-right-one .copyright-left .privacy li {
+    margin: 0;
+    padding: 0 12px;
+}
+
+.copy-right-one .copyright-left .privacy {
+    display: flex;
+    list-style: none;
+    padding-left: 18px;
+    position: relative;
+    margin: 0 0 0 30px;
+}

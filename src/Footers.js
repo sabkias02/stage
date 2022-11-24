@@ -345,10 +345,14 @@ const Footers = () => {
                 <span>©2022 Black History DAO. All rights reserved</span>
                 <ul className="privacy" style={{ listStyleType: "none" }}>
                   <li>
-                    <a href="/terms-condition">Terms &amp; Conditions</a>
+                    <a href="https://demo.blackhistorydao.org/terms-condition">
+                      Terms &amp; Conditions
+                    </a>
                   </li>
                   <li>
-                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="https://demo.blackhistorydao.org/privacy-policy">
+                      *Privacy Policy
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -366,7 +370,18 @@ const Footers = () => {
                       rel="noreferrer"
                       aria-label="Facebook"
                     >
-                      <Icon.Facebook />
+                      <Icon.Facebook
+                        style={{
+                          fontStyle: "normal",
+                          fontWeight: 400,
+
+                          fontSize: "10px",
+                          textTransform: "none",
+                          lineHeight: 1,
+
+                          color: "#acacac",
+                        }}
+                      />
                     </a>
                   </li>
                   <li>
@@ -376,7 +391,18 @@ const Footers = () => {
                       rel="noreferrer"
                       aria-label="Twitter"
                     >
-                      <Icon.Twitter />
+                      <Icon.Twitter
+                        style={{
+                          fontStyle: "normal",
+                          fontWeight: 400,
+
+                          fontSize: "10px",
+                          textTransform: "none",
+                          lineHeight: 1,
+
+                          color: "#acacac",
+                        }}
+                      />
                     </a>
                   </li>
                   <li>
@@ -386,7 +412,18 @@ const Footers = () => {
                       rel="noreferrer"
                       aria-label="Instagram"
                     >
-                      <Icon.Instagram />
+                      <Icon.Instagram
+                        style={{
+                          fontStyle: "normal",
+                          fontWeight: 400,
+
+                          fontSize: "10px",
+                          textTransform: "none",
+                          lineHeight: 1,
+
+                          color: "#acacac",
+                        }}
+                      />
                     </a>
                   </li>
                   <li>
@@ -396,7 +433,18 @@ const Footers = () => {
                       rel="noreferrer"
                       aria-label="linkedin"
                     >
-                      <Icon.Linkedin />
+                      <Icon.Linkedin
+                        style={{
+                          fontStyle: "normal",
+                          fontWeight: 400,
+
+                          fontSize: "10px",
+                          textTransform: "none",
+                          lineHeight: 1,
+
+                          color: "#acacac",
+                        }}
+                      />
                     </a>
                   </li>
                   <li>
@@ -406,7 +454,18 @@ const Footers = () => {
                       rel="noreferrer"
                       aria-label="mail"
                     >
-                      <Icon.Mail />
+                      <Icon.Mail
+                        style={{
+                          fontStyle: "normal",
+                          fontWeight: 400,
+
+                          fontSize: "10px",
+                          textTransform: "none",
+                          lineHeight: 1,
+
+                          color: "#acacac",
+                        }}
+                      />
                     </a>
                   </li>
                 </ul>
