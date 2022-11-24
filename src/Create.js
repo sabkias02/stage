@@ -73,7 +73,7 @@ class Create extends Component {
                       style={myStyle}
                       id="name"
                       rows="1"
-                      cols="30"
+                      cols="48"
                       placeholder="Your Name"
                       name="name"
                     ></textarea>
@@ -90,7 +90,7 @@ class Create extends Component {
                       style={myStyle}
                       id="email"
                       rows="1"
-                      cols="30"
+                      cols="48"
                       placeholder="Your Email"
                       name="email"
                     ></textarea>
@@ -107,7 +107,7 @@ class Create extends Component {
                       style={myStyle}
                       id="name"
                       rows="1"
-                      cols="40"
+                      cols="48"
                       placeholder=" Your Phone Number"
                       name="phone number"
                     ></textarea>
@@ -133,9 +133,20 @@ class Create extends Component {
               >
                 <div
                   className="upload"
-                  style={{ color: "red", fontWeight: "Bold", fontSize: "20px" }}
+                  style={{
+                    color: "red",
+                    fontWeight: "Bold",
+                    alignItems: "center",
+                  }}
                 >
-                  <Icon.Upload />
+                  <Icon.Upload
+                    style={{
+                      fontSize: "70px",
+                      strokeWidth: "1px",
+                      color: "#00a3ff",
+                      marginBottom: "10px",
+                    }}
+                  />
                   <MDBFile label="Choose a Cover/NFT" id="customFile" />
                 </div>
                 <span>PNG, GIF, WEBP, MP4 or MP3. Max 1Gb</span>
@@ -196,7 +207,7 @@ class Create extends Component {
                     style={{
                       borderRadius: "10px",
                       margin: "5px 0px 5px 0px ",
-                      width: "250px",
+                      width: "170px",
                     }}
                   >
                     <span>Make Proposal</span>

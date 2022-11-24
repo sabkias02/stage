@@ -298,5 +298,17 @@ html {
   transform:scale(1.10);
 }
 
+.btn-transparent {
+  color: #acacac;
+  transition: .4s;
+  align-items: center;
+  font-weight: 500;
+  display: inline-block;
+}
 
+
+.btn-transparent:hover {
+  color: #00a3ff
+  
+}
 

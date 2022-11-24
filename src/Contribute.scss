@@ -114,6 +114,7 @@ input[type=checkbox], input[type=radio] {
     appearance: auto;
 }
 
+
 input {
     height: 40px;
     font-family: inherit;
@@ -185,7 +186,7 @@ input[type=radio]~label:after {
 }
 
 
-input[type=checkbox]:checked~label:after, input[type=radio]:checked~label:after {
+input[type=checkbox]~label:after, input[type=radio]~label:after {
     content: " ";
     position: absolute;
     top: 16%;
@@ -309,7 +310,7 @@ input[type=checkbox]:checked~label:after, input[type=radio]:checked~label:after 
     opacity: 0;
 }
 
-product-share-wrapper .share-btn .icon {
+.product-share-wrapper .share-btn .icon {
 
     margin: 0;
     border: 0;
@@ -508,4 +509,20 @@ h3.title .sal-animate{
     
     
 }
+
+.btn-transparent {
+    color: #acacac;
+    transition: .4s;
+    align-items: center;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  
+  .btn-transparent:hover {
+    color: #00a3ff
+    
+  }
+  
+  
 

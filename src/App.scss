@@ -3,9 +3,9 @@
   
  
 
-  .APP {
+  body {
 
-  background-color: black;
+  background-color: #13131d;
 
 
   margin: 0;
@@ -15,7 +15,7 @@
     scroll-behavior: auto;
 }
 
-.App:before {
+body:before {
   content: "";
   width: 100%;
   height: 100%;

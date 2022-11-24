@@ -308,7 +308,7 @@ const BlackHistoryCards = () => {
                             overflow: "hidden",
                             width: "initial",
                             height: "initial",
-                            background: "none",
+                            background: " none",
                             opacity: 1,
                             border: "0px",
                             margin: "0px",
@@ -328,7 +328,7 @@ const BlackHistoryCards = () => {
                               border: "0px",
                               margin: "0px",
                               padding: "0px",
-                              maxWidth: " 100%",
+                              maxWidth: "100%",
                             }}
                           >
                             <img
@@ -355,6 +355,7 @@ const BlackHistoryCards = () => {
                             data-nimg="intrinsic"
                             style={{
                               position: "absolute",
+                              inset: " 0px",
                               boxSizing: "borderBox",
                               padding: "0px",
                               border: "none",
@@ -362,7 +363,7 @@ const BlackHistoryCards = () => {
                               display: "block",
                               width: "0px",
                               height: "0px",
-                              minWidth: "100%",
+                              minWidth: " 100%",
                               maxWidth: " 100%",
                               minHeight: " 100%",
                               maxHeight: " 100%",

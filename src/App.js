@@ -1,5 +1,5 @@
 import React from "react";
-
+import Footers from "./Footers";
 import Home from "./Home";
 import Create from "./Create";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -16,6 +16,7 @@ function App() {
           <Route exact path="/Home" element={<Home />} />
           <Route exact path="/Create" element={<Create />} />
         </Routes>
+        <Footers />
       </div>
     </Router>
   );
