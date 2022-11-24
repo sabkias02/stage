@@ -93,7 +93,7 @@ const BlackHistoryCards = () => {
                     <img
                       alt="Slider Images"
                       media="(prefers-color-scheme: dark)"
-                      src={require("./images/slider-3.jpg")}
+                      src={require("./images/slider-1.jpeg")}
                       decoding="async"
                       data-nimg="intrinsic"
                       style={{

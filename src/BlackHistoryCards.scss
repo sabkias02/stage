@@ -18,7 +18,7 @@
 
 main {
   box-sizing: border-box;
-  background-color: black;
+ 
 }
 *, :after, :before {
   box-sizing: border-box;
@@ -63,7 +63,10 @@ main {
   margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
-
+.slider-one  {
+  background-image:  ("./images/noise.gif");
+  background-color: #13131d;
+}
 
 
 .row>* {

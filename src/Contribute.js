@@ -3043,7 +3043,7 @@ function Contribute() {
                   </span>
                   <img
                     alt="Video BG"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    src={require("./images/Teresa.webp")}
                     decoding="async"
                     data-nimg="intrinsic"
                     style={{
