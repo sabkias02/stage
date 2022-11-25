@@ -1,0 +1,30 @@
+#progress {
+   
+   background-color:blue;
+    height: 70px;
+    width:70px;
+    border-radius: 50%;
+  right: 30px;
+    bottom: 30px;
+    z-index: 10000;
+     
+    cursor: pointer;
+    display: grid;
+     position: fixed;
+   
+   place-items: center;
+   box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+#progress-value
+ {
+ display: block;  
+display: grid;
+height: 60px;
+width: 60px;
+background-color: black;
+border-radius: 50%;
+place-items: center;
+font-size: 35px;
+color:blue;
+
+}

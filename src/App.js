@@ -1,6 +1,7 @@
 import React from "react";
 import Footers from "./Footers";
 import Home from "./Home";
+import ProgressBar from "./ProgressBar";
 import Create from "./Create";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Headers/Navbar";
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/Create" element={<Create />} />
         </Routes>
         <Footers />
+        <ProgressBar />
       </div>
     </Router>
   );

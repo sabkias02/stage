@@ -590,7 +590,7 @@ function Contribute() {
                               transform: "scale(1)",
                               cursor: "inherit",
                               background:
-                                "linear-gradient(to right, var(--color-primary-alta) 0%, var(--color-primary-alta) 0%, var(--color-primary) 0%, var(--color-primary) 100%, var(--color-primary-alta) 100%, var(--color-primary-alta) 100%)",
+                                "linear-gradient(to right,#212e48 0%, #212e48 0%, #00a3ff 0%, #00a3ff 100%, #212e48 100%, #212e48 100%)",
                             }}
                           >
                             <div className="slider-track">
