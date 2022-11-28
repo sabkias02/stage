@@ -125,6 +125,8 @@ h6.widget-title{
 
 .widget-content-wrapper .input-group .input-group-append button {
     border-radius: 0 5px 5px 0;
+    background: #212e48 !important;
+    color:white !important;
 }
 
 .input-group .btn {
@@ -199,6 +201,8 @@ ul.social-copyright{
     margin-block-start: 1em;
     margin-block-end: 1em;
     padding-inline-start: 40px;
+    margin-bottom: 30px;
+    padding-left: 20px;
 
 }
 
@@ -219,6 +223,7 @@ ul.social-copyright{
     line-height: 40px;
     text-align: center;
     border-radius: 100%;
+   
 }
 
 
@@ -240,6 +245,7 @@ button.btn.btn-primary-alta.btn-outline-secondary{
     
     font-family: inherit;
     text-transform: capitalize;
+    border: none !important;
 
 
    
@@ -247,7 +253,7 @@ button.btn.btn-primary-alta.btn-outline-secondary{
 .btn-outline-secondary {
    
     
-    background: #212e48 !important;;
+    background: #212e48 !important;
     color: #fff;
     position: relative;
     z-index: 2;
@@ -256,7 +262,7 @@ button.btn.btn-primary-alta.btn-outline-secondary{
     text-align: center;
     font-size: 16px;
     padding: 10px 16px;
-    border: 0;
+    border: none !important;
     box-shadow: none;
 }
 

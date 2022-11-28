@@ -51,7 +51,7 @@ const Navbar = () => {
                         <img
                           alt=""
                           aria-hidden="true"
-                          src={require("./logo-white.png")}
+                          src={require("./logo.png")}
                           style={{
                             display: "block",
                             maxWidth: " 100%",
@@ -67,7 +67,7 @@ const Navbar = () => {
                       </span>
                       <img
                         alt="nft-logo"
-                        src={require("./logo-white.png")}
+                        src={require("./logo.png")}
                         decoding="async"
                         data-nimg="intrinsic"
                         style={{

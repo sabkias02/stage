@@ -608,7 +608,7 @@ function Contribute() {
                                   cursor: "grab",
                                   userSelect: "none",
                                   touchAction: "none",
-                                  transform: "translate(0px, 0px)",
+                                  transform: "translate(0px, 0px) !important",
                                 }}
                               >
                                 <div
@@ -636,7 +636,7 @@ function Contribute() {
                                   cursor: "grab",
                                   userSelect: "none",
                                   touchAction: "none",
-                                  transform: "translate(192.5px, 0px)",
+                                  transform: "translate(250px, 0px)",
                                 }}
                               >
                                 <div
@@ -1608,7 +1608,7 @@ function Contribute() {
                       connect your wallet to get started{" "}
                     </p>
                     <a href="/connect" className="read-more-button">
-                      <i className="feather-arrow-right"></i>
+                      <Icon.ArrowRight />
                     </a>
                   </div>
                 </div>
@@ -1642,7 +1642,7 @@ function Contribute() {
                       submit your artifacts propose to the Dao for verfication
                     </p>
                     <a href="/collection" className="read-more-button">
-                      <i className="feather-arrow-right"></i>
+                      <Icon.ArrowRight />
                     </a>
                   </div>
                 </div>
@@ -1678,7 +1678,7 @@ function Contribute() {
                       artifact
                     </p>
                     <a href="/connect" className="read-more-button">
-                      <i className="feather-arrow-right"></i>
+                      <Icon.ArrowRight />
                     </a>
                   </div>
                 </div>
@@ -1715,7 +1715,7 @@ function Contribute() {
                       contribution
                     </p>
                     <a href="/creator" className="read-more-button">
-                      <i className="feather-arrow-right"></i>
+                      <Icon.ArrowRight />
                     </a>
                   </div>
                 </div>

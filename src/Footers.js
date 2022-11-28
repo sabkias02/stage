@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footers.scss";
 import * as Icon from "react-feather";
+import { Link } from "react-router-dom";
 
 const Footers = () => {
   return (
@@ -12,7 +13,7 @@ const Footers = () => {
               <div className="widget-content-wrapper">
                 <div className="footer-left">
                   <div className="logo-thumbnail logo-custom-css">
-                    <a href="/" className="logo-light">
+                    <Link to="/" className="logo-light">
                       <span
                         style={{
                           boxSizing: "borderBox",
@@ -46,7 +47,7 @@ const Footers = () => {
                           <img
                             alt=""
                             aria-hidden="true"
-                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27106%27%20height=%2735%27/%3e"
+                            src={require("./Headers/logo.png")}
                             style={{
                               display: "block",
                               maxWidth: " 100%",
@@ -62,7 +63,7 @@ const Footers = () => {
                         </span>
                         <img
                           alt="logo"
-                          src={require("./logo.png")}
+                          src={require("./Headers/logo.png")}
                           decoding="async"
                           data-nimg="intrinsic"
                           style={{
@@ -81,7 +82,7 @@ const Footers = () => {
                           }}
                         />
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <p className="rn-footer-describe">
                     Created with the collaboration of over 100 historians and
@@ -120,22 +121,22 @@ const Footers = () => {
                   style={{ listStyleType: "none" }}
                 >
                   <li className="single-list">
-                    <a href="/">Enter the Metaverse</a>
+                    <Link to="/">Enter the Metaverse</Link>
                   </li>
                   <li className="single-list">
-                    <a href="/">Visit our dao</a>
+                    <Link to="/">Visit our dao</Link>
                   </li>
                   <li className="single-list">
-                    <a href="/">Team Members</a>
+                    <Link to="/">Team Members</Link>
                   </li>
                   <li className="single-list">
-                    <a href="/">Become a Sponsor</a>
+                    <Link to="/">Become Link Sponsor</Link>
                   </li>
                   <li className="single-list">
-                    <a href="/">Join our Newsletter</a>
+                    <Link to="/">Join our Newsletter</Link>
                   </li>
                   <li className="single-list">
-                    <a href="/"></a>
+                    <Link to="/"></Link>
                   </li>
                 </ul>
               </div>
@@ -148,25 +149,25 @@ const Footers = () => {
                   style={{ listStyleType: "none" }}
                 >
                   <li className="single-list">
-                    <a href="/">Contact Us</a>
+                    <Link to="/">Contact Us</Link>
                   </li>
                   <li className="single-list">
-                    <a href="/">Join the Team</a>
+                    <Link to="/">Join the Team</Link>
                   </li>
                   <li className="single-list">
-                    <a href="/">Internships</a>
+                    <Link to="/">Internships</Link>
                   </li>
                   <li className="single-list">
-                    <a href="/"></a>
+                    <Link to="/"></Link>
                   </li>
                   <li className="single-list">
-                    <a href="/"></a>
+                    <Link to="/"></Link>
                   </li>
                   <li className="single-list">
-                    <a href="/"></a>
+                    <Link to="/"></Link>
                   </li>
                   <li className="single-list">
-                    <a href="/"></a>
+                    <Link to="/"></Link>
                   </li>
                 </ul>
               </div>
@@ -180,7 +181,7 @@ const Footers = () => {
                 >
                   <li className="recent-post">
                     <div className="thumbnail">
-                      <a href="/product">
+                      <Link to="/product">
                         <span
                           style={{
                             boxSizing: "borderBox",
@@ -219,11 +220,11 @@ const Footers = () => {
                             }}
                           />
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <h6 className="title">
-                        <a href="/product">I CAN'T BREATHE George Floyd</a>
+                        <Link to="/product">I CAN'T BREATHE George Floyd</Link>
                       </h6>
                       <p>Highest bid 1/20</p>
                       <span className="price">0.244wETH</span>
@@ -231,7 +232,7 @@ const Footers = () => {
                   </li>
                   <li className="recent-post">
                     <div className="thumbnail">
-                      <a href="/product">
+                      <Link to="/product">
                         <span
                           style={{
                             boxSizing: "borderBox",
@@ -270,11 +271,11 @@ const Footers = () => {
                             }}
                           />
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <h6 className="title">
-                        <a href="/product">Jim Crow Excerpt</a>
+                        <Link to="/product">Jim Crow Excerpt</Link>
                       </h6>
                       <p>Highest bid 1/20</p>
                       <span className="price">0.022wETH</span>
@@ -282,7 +283,7 @@ const Footers = () => {
                   </li>
                   <li className="recent-post">
                     <div className="thumbnail">
-                      <a href="/product">
+                      <Link to="/product">
                         <span
                           style={{
                             boxSizing: "borderBox",
@@ -321,11 +322,11 @@ const Footers = () => {
                             }}
                           />
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <h6 className="title">
-                        <a href="/product">Unrevealed Emmett Till audio</a>
+                        <Link to="/product">Unrevealed Emmett Till audio</Link>
                       </h6>
                       <p>Highest bid 1/20</p>
                       <span className="price">0.892wETH</span>
@@ -345,14 +346,14 @@ const Footers = () => {
                 <span>©2022 Black History DAO. All rights reserved</span>
                 <ul className="privacy" style={{ listStyleType: "none" }}>
                   <li>
-                    <a href="https://demo.blackhistorydao.org/terms-condition">
+                    <Link to="https://demo.blackhistorydao.org/terms-condition">
                       Terms &amp; Conditions
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="https://demo.blackhistorydao.org/privacy-policy">
+                    <Link to="https://demo.blackhistorydao.org/privacy-policy">
                       *Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -364,8 +365,8 @@ const Footers = () => {
                   style={{ listStyleType: "none" }}
                 >
                   <li>
-                    <a
-                      href="https://facebook.com"
+                    <Link
+                      to="https://facebook.com"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Facebook"
@@ -374,19 +375,20 @@ const Footers = () => {
                         style={{
                           fontStyle: "normal",
                           fontWeight: 400,
+                          width: "14px",
+                          height: "14px",
 
-                          fontSize: "10px",
                           textTransform: "none",
                           lineHeight: 1,
 
                           color: "#acacac",
                         }}
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://twitter.com"
+                    <Link
+                      to="https://twitter.com"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Twitter"
@@ -395,19 +397,20 @@ const Footers = () => {
                         style={{
                           fontStyle: "normal",
                           fontWeight: 400,
+                          width: "14px",
+                          height: "14px",
 
-                          fontSize: "10px",
                           textTransform: "none",
                           lineHeight: 1,
 
                           color: "#acacac",
                         }}
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://instagram.com"
+                    <Link
+                      to="https://instagram.com"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Instagram"
@@ -416,19 +419,20 @@ const Footers = () => {
                         style={{
                           fontStyle: "normal",
                           fontWeight: 400,
+                          width: "14px",
+                          height: "14px",
 
-                          fontSize: "10px",
                           textTransform: "none",
                           lineHeight: 1,
 
                           color: "#acacac",
                         }}
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://linkedin.com"
+                    <Link
+                      to="https://linkedin.com"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="linkedin"
@@ -437,36 +441,38 @@ const Footers = () => {
                         style={{
                           fontStyle: "normal",
                           fontWeight: 400,
+                          width: "14px",
+                          height: "14px",
 
-                          fontSize: "10px",
                           textTransform: "none",
                           lineHeight: 1,
 
                           color: "#acacac",
                         }}
                       />
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://mail.com"
+                    <Link
+                      to="https://mail.com"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="mail"
                     >
                       <Icon.Mail
                         style={{
-                          fontStyle: "normal",
+                          fontStyle: "smaller",
                           fontWeight: 400,
+                          width: "14px",
+                          height: "14px",
 
-                          fontSize: "10px",
                           textTransform: "none",
                           lineHeight: 1,
 
                           color: "#acacac",
                         }}
                       />
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

@@ -141,17 +141,18 @@ a.btn.btn-large, button.btn.btn-large {
   min-width: 160px;
 }
 
-.button-group >a.btn.btn-primary, button.btn.btn-primary {
+.button-group >a.btn.btn-primary, button.btn.btn-primary ::first-letter {
   background-color: #00a3ff;
   color: white;
+  text-transform: capitalize;
 }
 
-.button-group >a.btn.btn-primary:hover , button.btn.btn-primary:hover {
+.button-group > a.btn.btn-primary:hover , button.btn.btn-primary:hover {
   background-color: #212e48;
   color: white;
 }
 
-a.btn, button.btn {
+a.btn, button.btn ::first-letter  {
   display: inline-block;
   font-weight: 500;
   text-align: center;
