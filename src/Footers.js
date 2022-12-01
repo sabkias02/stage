@@ -252,7 +252,7 @@ const Footers = () => {
                             alt="product Images"
                             src={require("./images/JimcrowRond.webp")}
                             decoding="async"
-                            dataNimg="fixed"
+                            data-nimg="fixed"
                             style={{
                               position: "absolute",
                               inset: "0px",
@@ -303,7 +303,7 @@ const Footers = () => {
                             alt="product Images"
                             src={require("./images/till1.webp")}
                             decoding="async"
-                            dataNimg="fixed"
+                            data-nimg="fixed"
                             style={{
                               position: "absolute",
                               inset: "0px",

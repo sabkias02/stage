@@ -264,9 +264,9 @@ const Navbar = () => {
         <div
           className={sidenav ? "popup-mobile-menu active" : "popup-mobile-menu"}
           role="button"
-          tabindex="0"
+          tabIndex="0"
         >
-          <div className="inner" role="button" tabindex="0">
+          <div className="inner" role="button" tabIndex="0">
             <div className="header-top">
               <div className="logo-thumbnail logo-custom-css">
                 <a href="/" className="logo-light">
