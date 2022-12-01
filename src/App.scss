@@ -27,3 +27,12 @@ body:before {
   background-color: #639;
   opacity: .05;
 }
+
+@media only screen and (max-width: 767px){
+body {
+    overflow: hidden;
+    display: block;
+    overflow-y: auto;
+    scroll-behavior: auto!important;
+}
+}

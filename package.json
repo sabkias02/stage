@@ -37,6 +37,7 @@
     "react-sal": "^0.0.1",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.1.1",
+    "reactjs-popup": "^2.0.5",
     "sal.js": "^0.8.5",
     "styled-components": "^4.4.1",
     "v2": "^0.0.3",

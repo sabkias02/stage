@@ -2,6 +2,8 @@ import React from "react";
 
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import * as Icon from "react-feather";
 
 const Navbar = () => {
   window.addEventListener("scroll", function () {
@@ -9,6 +11,10 @@ const Navbar = () => {
     header.classList.toggle("sticky", window.scrollY > 0);
   });
 
+  const [sidenav, setSideNav] = useState(false);
+  const [search, setSearch] = useState(false);
+  const showSideNav = () => setSideNav(!sidenav);
+  const showSearch = () => setSearch(!search);
   return (
     <div>
       <div id="__next" data-reactroot="">
@@ -192,13 +198,11 @@ const Navbar = () => {
 
                     <div className="search-icon">
                       <button type="button">
-                        <i className="feather-search">
-                          <div
-                            dangerouslySetInnerHTML={{
-                              __html: window.feather.icons.search.toSvg(),
-                            }}
-                          />
-                        </i>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: window.feather.icons.search.toSvg(),
+                          }}
+                        />
                       </button>
                     </div>
                   </form>
@@ -208,19 +212,24 @@ const Navbar = () => {
                     <button
                       type="button"
                       aria-label="Click here to open search form"
+                      onClick={showSearch}
                     >
-                      <i data-feather="search"></i>
+                      <Icon.Search style={{ borderRadius: "100%" }} />
                     </button>
                   </div>
                   <form
                     id="header-search-1"
                     action="#"
                     method="GET"
-                    className="large-mobile-blog-search"
+                    className={
+                      search
+                        ? "large-mobile-blog-search active"
+                        : "large-mobile-blog-search"
+                    }
                   >
                     <div className="rn-search-mobile form-group">
                       <button type="submit" className="search-button">
-                        <i className="feather icon-search"></i>
+                        <Icon.Search />
                       </button>
                       <input type="text" placeholder="Search ..." />
                     </div>
@@ -238,8 +247,12 @@ const Navbar = () => {
                 </div>
                 <div className="setting-option mobile-menu-bar d-block d-xl-none">
                   <div className="hamberger">
-                    <button type="button" className="hamberger-button">
-                      <i className="feather-menu"></i>
+                    <button
+                      type="button"
+                      className="hamberger-button"
+                      onClick={showSideNav}
+                    >
+                      <Icon.Menu />
                     </button>
                   </div>
                 </div>
@@ -247,7 +260,12 @@ const Navbar = () => {
             </div>
           </div>
         </header>
-        {/*<div className="popup-mobile-menu" role="button" tabindex="0">
+
+        <div
+          className={sidenav ? "popup-mobile-menu active" : "popup-mobile-menu"}
+          role="button"
+          tabindex="0"
+        >
           <div className="inner" role="button" tabindex="0">
             <div className="header-top">
               <div className="logo-thumbnail logo-custom-css">
@@ -285,7 +303,7 @@ const Navbar = () => {
                       <img
                         alt=""
                         aria-hidden="true"
-                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27106%27%20height=%2735%27/%3e"
+                        src={require("./logo.png")}
                         style={{
                           display: "block",
                           maxWidth: "100%",
@@ -301,8 +319,7 @@ const Navbar = () => {
                     </span>
                     <img
                       alt="nft-logo"
-                      srcSet="/_next/image?url=%2Fimages%2Flogo%2Flogo-white.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fimages%2Flogo%2Flogo-white.png&amp;w=256&amp;q=75 2x"
-                      src="/_next/image?url=%2Fimages%2Flogo%2Flogo-white.png&amp;w=256&amp;q=75"
+                      src={require("./logo.png")}
                       decoding="async"
                       data-nimg="intrinsic"
                       style={{
@@ -395,8 +412,18 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="close-menu">
-                <button className="close-button" type="button">
-                  <i className="feather-x"></i>
+                <button
+                  className="close-button"
+                  type="button"
+                  onClick={showSideNav}
+                >
+                  <Icon.X
+                    className="w-8 h-8"
+                    style={{
+                      color: "white",
+                      backgroundColor: "black",
+                    }}
+                  />
                 </button>
               </div>
             </div>
@@ -417,7 +444,7 @@ const Navbar = () => {
               </nav>
             </div>
           </div>
-                    </div*/}
+        </div>
       </div>
     </div>
   );

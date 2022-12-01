@@ -81,6 +81,13 @@ main {
   font-size: 60px;
   font-weight: 400;
 }
+
+.slider-one h2.title {
+  @media only screen and (max-width: 767px){
+    font-size: 30px;
+}
+
+}
 [data-sal|=slide].sal-animate, body.sal-disabled [data-sal|=slide] {
   opacity: 1;
   transform: none;
@@ -127,6 +134,14 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+@media only screen and (max-width: 767px){
+p {
+    margin: 0 0 20px;
+   
+    line-height: 28px;
+}
 }
 .slider-one .button-group {
   margin: -7px;
@@ -316,3 +331,29 @@ html {
   
 }
 
+@media only screen and (max-width: 767px){
+.slider-one .slider-thumbnail {
+    display: flex;
+    justify-content: center;
+}
+}
+
+.mt_sm--50 {
+  @media only screen and (max-width: 767px){
+    margin-top: 50px!important;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+}
+
+
+.offset-lg-1{
+  @media only screen and (max-width: 767px){
+    
+    flex-shrink: 0;
+    width: 100%;
+   
+    margin-left: 0;
+}
+}
