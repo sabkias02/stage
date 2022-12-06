@@ -52,7 +52,7 @@ col-12 {
 *, :after, :before {
     box-sizing: border-box;
 }
-feuille de style user-agent
+
 div {
     display: block;
 }
@@ -724,5 +724,15 @@ p.subtitle {
 .mb--50 {
     margin-bottom: 50px!important;
 }
+
+
+@media (min-width: 1400px){
+.col-xxl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+}
+
+
   
 

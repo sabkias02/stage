@@ -1,6 +1,7 @@
 import React from "react";
 import "./BlackHistoryCards.scss";
 import Contribute from "./Contribute";
+import "./Contribute.scss";
 import { Link } from "react-router-dom";
 import * as Icon from "react-feather";
 // ES6 modules
@@ -120,6 +121,166 @@ const BlackHistoryCards = () => {
             </div>
           </div>
         </div>
+        <div className="rn-service-area rn-section-gapTop">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 mb--50">
+                <h3
+                  className="title"
+                  data-sal-delay="150"
+                  data-sal="slide-up"
+                  data-sal-duration="800"
+                >
+                  How to contribute to the Black History Dao
+                </h3>
+              </div>
+            </div>
+            <div className="row g-5">
+              <div className="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="rn-service-one color-shape-7"
+                >
+                  <div className="inner">
+                    <div className="icon">
+                      <img
+                        src={require("./images/icons/shape-7.png")}
+                        alt="Set up your wallet"
+                      />
+                    </div>
+                    <div className="subtitle">Step-01</div>
+                    <div className="content">
+                      <h4 className="title">
+                        <a href="/connect">Set up your wallet</a>
+                      </h4>
+                      <p className="description">
+                        connect your wallet to get started{" "}
+                      </p>
+                      <a href="/connect" className="read-more-button">
+                        <Icon.ArrowRight />
+                      </a>
+                    </div>
+                  </div>
+                  <a href="/connect" className="over-link">
+                    <span className="visually-hidden">
+                      Click here to read more
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div className="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="rn-service-one color-shape-7"
+                >
+                  <div className="inner">
+                    <div className="icon">
+                      <img
+                        src={require("./images/icons/shape-1.png")}
+                        alt="Upload your artifact "
+                      />
+                    </div>
+                    <div className="subtitle">Step-02</div>
+                    <div className="content">
+                      <h4 className="title">
+                        <a href="/collection">Upload your artifact </a>
+                      </h4>
+                      <p className="description">
+                        submit your artifacts propose to the Dao for verfication
+                      </p>
+                      <a href="/collection" className="read-more-button">
+                        <Icon.ArrowRight />
+                      </a>
+                    </div>
+                  </div>
+                  <a href="/collection" className="over-link">
+                    <span className="visually-hidden">
+                      Click here to read more
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div className="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="rn-service-one color-shape-7"
+                >
+                  <div className="inner">
+                    <div className="icon">
+                      <img
+                        src={require("./images/icons/shape-5.png")}
+                        alt="Review Period"
+                      />
+                    </div>
+                    <div className="subtitle">Step-03</div>
+                    <div className="content">
+                      <h4 className="title">
+                        <a href="/connect">Review Period</a>
+                      </h4>
+                      <p className="description">
+                        Your artifacts will remain on hold while our expert team
+                        of historians verfiy the legitamacy of your historic
+                        artifact
+                      </p>
+                      <a href="/connect" className="read-more-button">
+                        <Icon.ArrowRight />
+                      </a>
+                    </div>
+                  </div>
+                  <a href="/connect" className="over-link">
+                    <span className="visually-hidden">
+                      Click here to read more
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div className="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div
+                  data-sal="slide-up"
+                  data-sal-delay="150"
+                  data-sal-duration="800"
+                  className="rn-service-one color-shape-7"
+                >
+                  <div className="inner">
+                    <div className="icon">
+                      <img
+                        src={require("./images/icons/shape-6.png")}
+                        alt="Verified submissions"
+                      />
+                    </div>
+                    <div className="subtitle">Step-04</div>
+                    <div className="content">
+                      <h4 className="title">
+                        <a href="/creator">Verified submissions</a>
+                      </h4>
+                      <p className="description">
+                        When your artifact is reviewed and verfied it will be
+                        submitting onto the Black history Dao archive and the
+                        contributer will recieve points in scale of there
+                        contribution
+                      </p>
+                      <a href="/creator" className="read-more-button">
+                        <Icon.ArrowRight />
+                      </a>
+                    </div>
+                  </div>
+                  <a href="/creator" className="over-link">
+                    <span className="visually-hidden">
+                      Click here to read more
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="rn-collection-area rn-section-gapTop">
           <div className="container">
             <div className="row mb--50 align-items-center">

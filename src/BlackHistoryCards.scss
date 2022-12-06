@@ -43,7 +43,7 @@ main {
 
 .container {
   padding: 2px 16px;
-  max-width: 1140px;
+  max-width: 1440px;
   margin-right: auto;
     margin-left: auto;
     -webkit-text-size-adjust: 100%;
@@ -256,6 +256,7 @@ a {
   border-radius: 3px;
   color: white;
   transition: 0.4s;
+  width: max-content;
 }
 
 .rn-collection-inner-one .collection-wrapper .collection-deg span.items:hover {
