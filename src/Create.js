@@ -36,9 +36,9 @@ class Create extends Component {
           <div className="container1">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-6 col-12">
-                <h4 cclassName="pageTitle text-center text-md-start">
+                <h5 className="pageTitle text-center text-md-start">
                   Create New Proposal
-                </h4>
+                </h5>
               </div>
               <div className="col-lg-6 col-md-6 col-12">
                 <ul className="breadcrumb-list">
@@ -58,14 +58,17 @@ class Create extends Component {
 
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-6" style={{ color: "yellow" }}>
-              <div className="container ">
+            <div
+              className="col-lg-6"
+              style={{ WebkitAlignContent: "center", color: "beige" }}
+            >
+              <div className="container-name ">
                 <form>
                   <div className="mb-2">
                     <label
                       className="form-label"
                       htmlFor="name"
-                      style={{ color: "yellow" }}
+                      style={{ color: "beige" }}
                     >
                       Name
                     </label>
@@ -78,45 +81,15 @@ class Create extends Component {
                       name="name"
                     ></textarea>
                   </div>
-                  <div className="mb-2">
-                    <label
-                      className="form-label"
-                      htmlFor="email"
-                      style={{ color: "yellow" }}
-                    >
-                      Email
-                    </label>
-                    <textarea
-                      style={myStyle}
-                      id="email"
-                      rows="1"
-                      cols="48"
-                      placeholder="Your Email"
-                      name="email"
-                    ></textarea>
-                  </div>
-                  <div className="mb-2">
-                    <label
-                      className="form-label"
-                      htmlFor="Telnumber"
-                      style={{ color: "yellow" }}
-                    >
-                      Phone Number
-                    </label>
-                    <textarea
-                      style={myStyle}
-                      id="name"
-                      rows="1"
-                      cols="48"
-                      placeholder=" Your Phone Number"
-                      name="phone number"
-                    ></textarea>
-                  </div>
                 </form>
               </div>
               <div
                 className="upload-formate "
-                style={{ color: "yellow", marginLeft: "10px" }}
+                style={{
+                  color: "beige",
+                  marginLeft: "10px",
+                  marginBottom: "10px",
+                }}
               >
                 <strong>Upload Asset file</strong>
 
@@ -141,19 +114,30 @@ class Create extends Component {
                 >
                   <Icon.Upload
                     style={{
+                      fontWeight: 300,
+                      width: 35,
+                      height: 35,
                       fontSize: "70px",
-                      strokeWidth: "1px",
+                      strokeWidth: "2px",
                       color: "#00a3ff",
                       marginBottom: "10px",
+                      marginLeft: "175px",
                     }}
                   />
-                  <MDBFile label="Choose a Cover/NFT" id="customFile" />
+                  <div className="text-center">Choose a Cover/NFT</div>
+                  <MDBFile label="" id="customFile" />
                 </div>
-                <span>PNG, GIF, WEBP, MP4 or MP3. Max 1Gb</span>
+                <span style={{ paddingLeft: "60px", marginTop: "10px" }}>
+                  PNG, GIF, WEBP, MP4 or MP3.{" "}
+                </span>
+                <br />
+                <span style={{ paddingLeft: "130px", marginTop: "10px" }}>
+                  Max 1Gb
+                </span>
               </div>
             </div>
             <div
-              className="col-lg-6 mt-4 "
+              className="col-lg-7 "
               style={{
                 background: "black",
                 color: "yellow",
@@ -175,7 +159,7 @@ class Create extends Component {
                   placeholder="Format: `Name_Date_Historian-Initials.Org`"
                   name="title"
                 ></textarea>
-                <label htmlFor="Description" className="form-label mb-3 mt-5">
+                <label htmlFor="Description" className="form-label mb-1 mt-2">
                   Description
                 </label>
                 <textarea
@@ -189,25 +173,24 @@ class Create extends Component {
                 ></textarea>
                 <div className="btn-group">
                   <button
-                    className="btn btn-large  btn-space  mt-5"
+                    className="btn btn-large btn-primary-alta  btn-space  mt-2"
                     type="submit"
                     data-btn="preview"
                     style={{
-                      margin: "5px 35px 5px 0px ",
+                      margin: "5px 5px 5px 0px ",
                       borderRadius: "10px",
-                      backgroundColor: "rgb(63, 66, 87)",
                     }}
                   >
                     <span>Preview</span>
                   </button>{" "}
                   <button
                     onClick={this.handleClick}
-                    className="btn btn-large btn-primary btn-space  mt-5 "
+                    className="btn btn-large btn-primary btn-space  mt-2 "
                     type="submit"
                     style={{
                       borderRadius: "10px",
                       margin: "5px 0px 5px 0px ",
-                      width: "170px",
+                      width: "280px",
                     }}
                   >
                     <span>Make Proposal</span>
