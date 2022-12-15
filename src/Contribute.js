@@ -1,8 +1,11 @@
 import "./Contribute.scss";
 import sal from "sal.js";
 import * as Icon from "react-feather";
+import { useContext } from "react";
 
 function Contribute() {
+  // const { response, isLoading, searchImage } = useContext(ImageContext);
+
   return (
     <div>
       <div className="explore-area rn-section-gapTop" id="explore-id">
@@ -669,9 +672,19 @@ function Contribute() {
             </div>
             <div className="col-lg-9 order-1 order-lg-2">
               <div className="row g-5">
+                {response.map((data, key) => (
+                  <picture key={key} data={data} />
+                ))}
                 <div className="col-lg-4 col-md-6 col-sm-12">
                   <div className="product-style-one no-overlay">
                     <div className="card-thumbnail">
+                      {isLoading ? (
+                        <Skeleton item={10} />
+                      ) : (
+                        response.map((data, key) => (
+                          <picture key={key} data={data} />
+                        ))
+                      )}
                       <a href="/product">
                         <span
                           style={{
@@ -720,6 +733,7 @@ function Contribute() {
                               }}
                             />
                           </span>
+
                           <img
                             alt="NFT_portfolio"
                             className="img-top"
@@ -1563,13 +1577,6 @@ function Contribute() {
           </div>
         </div>
       </div>
-      {/*
-      
-    
-    
-    
-    
-                          */}
 
       <div className="rn-collection-area rn-section-gapTop">
         <div className="container">
