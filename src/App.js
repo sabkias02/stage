@@ -1,25 +1,39 @@
 import React from "react";
-import Footers from "./Footers";
+import { createContext, useState } from "react";
 import Home from "./Home";
-import ProgressBar from "./ProgressBar";
-import Create from "./Create";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Headers/Navbar";
-import "./App.scss";
+import useAxios from "./hooks/useAxios";
 
+import SearchBar from "./components/SearchBar";
+import CreateNewProposal from "./createNewProposal";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import "./App.scss";
+// Create Context
+export const ImageContext = createContext();
 function App() {
+  const [searchImage, setSearchImage] = useState("");
+  const { response, isLoading, error, fetchData } = useAxios(
+    `search/photos?page=1&query=office&client_id=1xg6Py7pkOWr_8lSRFRpTvAacLRqsKewoPezmPNN7wo`
+  );
+  const value = {
+    response,
+    isLoading,
+    error,
+    fetchData,
+    searchImage,
+    setSearchImage,
+  };
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/Home" element={<Home />} />
-          <Route exact path="/Create" element={<Create />} />
-        </Routes>
-        <Footers />
-        <ProgressBar />
-      </div>
+      <ImageContext.Provider value={value}>
+        <div className="App">
+          <Routes>
+            <Route exact path="/" element={<SearchBar />} />
+            <Route exact path="/Home" element={<Home />} />
+            <Route exact path="/Create" element={<CreateNewProposal />} />
+          </Routes>
+        </div>
+      </ImageContext.Provider>
     </Router>
   );
 }

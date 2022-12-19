@@ -1,5 +1,5 @@
 import React from "react";
-import BlackHistoryCards from "./BlackHistoryCards";
+import Create from "./Create";
 import Footers from "./Footers";
 import ProgressBar from "./ProgressBar";
 import Navbar from "./Headers/Navbar";
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <BlackHistoryCards />
+      <Create />
       <Footers />
       <ProgressBar />
     </div>

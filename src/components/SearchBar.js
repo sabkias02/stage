@@ -1,30 +1,42 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { ImageContext } from "../App";
 import "./SearchBar.css";
-import * as Icon from "react-feather";
 
-function SearchBar({ placeholder, data }) {
-  const [filteredData, setFilteredData] = useState([]);
-  const [wordEntered, setWordEntered] = useState("");
-  const handleFilter = (event) => {
-    const searchWord = event.target.value;
-    setWordEntered(searchWord);
-    const newFilter = data.filter((value) => {
-      return value.title.toLowerCase().includes(searchWord.toLowerCase());
-    });
-    if (searchWord === "") {
-      setFilteredData([]);
-    } else {
-      setFilteredData(newFilter);
+function SearchBar() {
+  let navigate = useNavigate();
+
+  const [searchValue, setSearchValue] = useState("");
+  const { fetchData, setSearchImage } = useContext(ImageContext);
+
+  const handleInputChange = (e) => {
+    setSearchValue(e.target.value);
+  };
+  // const handleButtonSearch = (e) => {
+  //   e.preventDefault();
+  //   navigate("/Home");
+  //   fetchData(
+  //     `search/photos?page=1&query=${searchValue}&client_id=1xg6Py7pkOWr_8lSRFRpTvAacLRqsKewoPezmPNN7wo`
+  //   );
+  //   setSearchValue("");
+  //   setSearchImage(searchValue);
+  // };
+  const handleEnterSearch = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      navigate("/Home");
+      fetchData(
+        `search/photos?page=1&query=${searchValue}&client_id=1xg6Py7pkOWr_8lSRFRpTvAacLRqsKewoPezmPNN7wo`
+      );
+      setSearchValue("");
+      setSearchImage(searchValue);
     }
   };
-  const clearInput = () => {
-    setFilteredData([]);
-    setWordEntered("");
-  };
+
   return (
     <div>
-      <div className="container">
+      <div className="container4">
         <img
           src={require(`./images/unnamed-1.png`)}
           loading="lazy"
@@ -64,15 +76,16 @@ function SearchBar({ placeholder, data }) {
                   maxlength="256"
                   name="Search"
                   data-name="Search"
-                  placeholder={placeholder}
+                  placeholder="Search Anything.."
                   id="Search"
                   required=""
-                  value={wordEntered}
-                  onChange={handleFilter}
+                  value={searchValue}
+                  onChange={handleInputChange}
+                  onKeyDown={handleEnterSearch}
                 />
-                <div className="searchIcon">
-                  <Icon.Search />
-                </div>
+                {/* <div className="searchIcon">
+                  <Icon.Search onClick={handleButtonSearch} />
+                </div> */}
               </div>
             </form>
             <div className="w-form-done">
