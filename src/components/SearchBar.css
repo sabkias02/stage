@@ -39,7 +39,7 @@ h1 {
   }
   
   .auto-search-wrapper {
-    width: 600px;
+    width: 400px;
     height: 50px;
     margin-left: -168px;
     padding-left: 0px;
@@ -58,12 +58,12 @@ h1 {
     width: 600px;
     height: 50px;
     margin-bottom: 0px;
+    vertical-align: middle;
    
     
     border-color: #fff;
     border-radius: 8px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    
     background-color: #fff;
   }
   input.search-box:focus {
@@ -75,7 +75,7 @@ h1 {
    
     display: flex;
     flex-direction: row;
-    width: 600px;
+    width: 500px;
    border-radius: 8px;
     height: 50px;
     margin-bottom: 0px;
@@ -221,10 +221,15 @@ h1 {
   }
   
   .image-4 {
+    width: 100%;
     display: block;
     padding-bottom: 0px;
     background-color: #000;
     color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 932px;
   }
   
   .div-block {
@@ -256,6 +261,12 @@ h1 {
     font-size: 32px;
     font-style: normal;
     text-transform: none;
+    line-height: 44px;
+    font-weight: bold;
+    
+    
+    
+    
   }
   
   .image-4-copy {
@@ -272,6 +283,7 @@ h1 {
   @media screen and (max-width: 991px) {
     .heading-2 {
       position: static;
+      text-align: center;
       z-index: 22;
       display: block;
       color: #fff;
@@ -292,8 +304,8 @@ h1 {
   
     .form {
       width: 90%;
-      margin-right: auto;
-      margin-left: auto;
+      margin-right: 10%;
+      margin-left: 10%;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -302,10 +314,14 @@ h1 {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
+      vertical-align: middle;
     }
   
     .search-box {
       width: 100%;
+      margin-left: 60px;
+    margin-right: 70px;
+    vertical-align: middle;
     }
   
     .search-result-wrapper {
@@ -320,9 +336,9 @@ h1 {
     text-decoration: none;
   }
   
-  a:hover {
+  /* a:hover {
     background-color: lightgrey;
-  }
+  } */
 
 .dataItem {
     width: 100%;

@@ -678,7 +678,11 @@ function Contribute() {
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <div className="product-style-one no-overlay">
                       <div className="card-thumbnail">
-                        <a href="/product">
+                        <a
+                          href={data.links.download}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <span
                             style={{
                               boxSizing: "borderBox",
@@ -755,7 +759,7 @@ function Contribute() {
                       <div className="product-share-wrapper">
                         <div className="profile-share">
                           <a href="/" className="more-author-text">
-                            6+ Place Bit.
+                            {data.tags[1].title}
                           </a>
                         </div>
                         <div className="share-btn share-btn-activation dropdown">
@@ -783,7 +787,9 @@ function Contribute() {
                         </div>
                       </div>
                       <a href="/">
-                        <span className="product-name">BHD_PROPOSAL@ID</span>
+                        <span className="product-name">
+                          {data.alt_description}
+                        </span>
                       </a>
                     </div>
                   </div>

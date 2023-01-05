@@ -9,7 +9,7 @@ function SearchBar() {
 
   const [searchValue, setSearchValue] = useState("");
   const { fetchData, setSearchImage } = useContext(ImageContext);
-
+  const { response, searchImage } = useContext(ImageContext);
   const handleInputChange = (e) => {
     setSearchValue(e.target.value);
   };
@@ -22,6 +22,7 @@ function SearchBar() {
   //   setSearchValue("");
   //   setSearchImage(searchValue);
   // };
+
   const handleEnterSearch = (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
@@ -29,10 +30,15 @@ function SearchBar() {
       fetchData(
         `search/photos?page=1&query=${searchValue}&client_id=1xg6Py7pkOWr_8lSRFRpTvAacLRqsKewoPezmPNN7wo`
       );
-      setSearchValue("");
+      //setSearchValue("");
       setSearchImage(searchValue);
+      localStorage.setItem("images", JSON.stringify(response));
+
+      console.log(response);
     }
   };
+
+  console.log(fetchData);
 
   return (
     <div>

@@ -157,9 +157,13 @@ li.item.current{
   
   background-color: #00a3ff;
 text-transform: capitalize;
+
 }
 
+button.btn.btn-large{
 
+  min-width: 160px;
+}
 
 
 
@@ -186,4 +190,36 @@ button.btn.btn-large.btn-primary:hover{
   -ms-transform: scale(0.8); /* IE 9 */
   -webkit-transform: scale(0.8); /* Safari 3-8 */
   transform: scale(0.8); 
+}
+
+@media only screen and (max-width: 767px){
+.rn-breadcrumb-inner .breadcrumb-list {
+    justify-content: center;
+}
+.btn-group{
+  display: block;
+}
+button.btn.btn-large {
+ 
+  min-width: max-content;
+}
+}
+
+.form-wrapper-one {
+  padding: 40px 35px;
+  border-radius: 6px;
+  
+  height: 100%;
+  display: block;
+}
+
+.w-100 {
+  width: 100%!important;
+}
+.d-block {
+  display: block!important;
+}
+
+.btn-group{
+  width: 100%;
 }

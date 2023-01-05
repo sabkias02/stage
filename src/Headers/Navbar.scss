@@ -785,6 +785,29 @@ input[type=search] {
 
     display: none;
   }
+  div.icorBox.search-mobile-icon {
+
+    visibility: visible;
+    
+    }
+  
 
   
 }
+
+
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px){
+div.icorBox.search-mobile-icon {
+
+visibility: hidden;
+
+}
+#header-search-1{
+
+  display: none;
+}
+
+}
+
